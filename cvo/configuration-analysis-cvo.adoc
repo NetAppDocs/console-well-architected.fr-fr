@@ -110,4 +110,4 @@ Activez la hiérarchisation des données froides pour déplacer les données fro
 
 
 .Et ensuite
-link:cvo/improve-configurations-cvo.html["Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées"]
+link:improve-configurations-cvo.html["Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées"]

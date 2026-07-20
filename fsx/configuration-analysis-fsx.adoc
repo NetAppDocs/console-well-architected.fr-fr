@@ -183,4 +183,4 @@ L'analyse de configuration identifie les volumes NAS qui ne sont pas utilisés a
 
 
 .Et ensuite
-link:fsx/improve-configurations-fsx.html["Implémentez des configurations de système de fichiers Amazon FSx for NetApp ONTAP bien architecturées"]
+link:improve-configurations-fsx.html["Implémentez des configurations de système de fichiers Amazon FSx for NetApp ONTAP bien architecturées"]
