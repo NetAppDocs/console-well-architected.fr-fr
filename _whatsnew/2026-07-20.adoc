@@ -13,8 +13,8 @@ Apprenez-en davantage sur le link:https://docs.netapp.com/us-en/console-well-arc
 
 Le tableau de bord bien conçu dans la Console est disponible pour les systèmes de stockage suivants :
 
-* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
-* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
+* link:https://docs.netapp.com/us-en/console-well-architected/fsx/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
+* link:https://docs.netapp.com/us-en/console-well-architected/cvo/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
 
 
 

@@ -1,8 +1,14 @@
-= 20 juillet 2026
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, well-architected, well-architected dashboard, amazon fsx for netapp ontap, fsx for ontap, cloud volumes ontap' 
+summary: Découvrez les nouveautés du tableau de bord bien conçu dans la NetApp Console. 
+---
+= Quelles sont les nouveautés du tableau de bord Well-Architected dans la NetApp Console
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
-
-Lien permanent : whats-new.html Mots-clés : nouveautés, fonctionnalités, nouveau, notes de version, améliorations, correctifs, nouvelles fonctionnalités, well-architected, tableau de bord well-architected, amazon fsx for netapp ontap, fsx for ontap, cloud volumes ontap Résumé : « Découvrez les nouveautés du tableau de bord well-architected dans NetApp Console. » --- = Nouveautés du tableau de bord Well-Architected dans NetApp Console :icons: font :imagesdir: ./media/
 
 [role="lead"]
 Découvrez les nouveautés du composant Well-architected de Workload Factory.
@@ -25,8 +31,8 @@ Apprenez-en davantage sur le link:https://docs.netapp.com/us-en/console-well-arc
 
 Le tableau de bord bien conçu dans la Console est disponible pour les systèmes de stockage suivants :
 
-* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
-* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
+* link:https://docs.netapp.com/us-en/console-well-architected/fsx/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
+* link:https://docs.netapp.com/us-en/console-well-architected/cvo/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
 
 
 
