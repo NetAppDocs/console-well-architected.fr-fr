@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: cvo/configuration-analysis-cvo.html 
+keywords: Cloud Volumes ONTAP, configuration issues, issues, improve, analyze, storage configuration, recommendation, recommendations 
+summary: 'NetApp Console analyse quotidiennement les configurations du système de stockage afin de déterminer s"il existe des problèmes de configuration.' 
+---
+= Analyse de configuration pour Cloud Volumes ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Console analyse régulièrement la configuration des systèmes de stockage afin de détecter d'éventuels problèmes. Lorsque des problèmes sont détectés, la Console vous indique la nature des problèmes et vous explique les modifications à apporter pour garantir des performances optimales, une rentabilité maximale et la conformité aux bonnes pratiques de vos systèmes de stockage.
+
+Principales fonctionnalités :
+
+* Analyse quotidienne de la configuration
+* Validations automatiques des bonnes pratiques pour les systèmes de stockage NetApp ONTAP et les fournisseurs de stockage partenaires
+* Observabilité proactive
+* Des idées à l'action
+
+
+
+
+[[analysis-requirements]]
+== Exigences d'analyse
+
+Pour une analyse complète du système Cloud Volumes ONTAP, vous devez link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html#agent-console-deploy["déployer un agent NetApp Console"^]. La connectivité de l’agent Console permet à la Console d’analyser toutes les configurations du système Cloud Volumes ONTAP, telles que la protection des données et les performances.
+
+
+
+[[best-practices-and-recommendations-for-cloud-volumes-ontap-systems]]
+== Bonnes pratiques et recommandations pour les systèmes Cloud Volumes ONTAP
+
+NetApp évalue les configurations de stockage afin de fournir une vue approfondie des bonnes pratiques de configuration ONTAP et de la conformité au cadre Azure Well-Architected. L'évaluation recommande également des améliorations et des correctifs.
+
+L'analyse bien conçue catégorise les configurations selon les piliers suivants du cadre : _fiabilité_, _sécurité_, _excellence opérationnelle_, _optimisation des coûts_ et _efficacité des performances_.
+
+
+
+[[reliability]]
+=== Fiabilité
+
+La fiabilité garantit que les charges de travail exécutent leurs fonctions prévues correctement et de manière constante, même en cas de perturbations.
+
+* *Planifiez des instantanés locaux*
++
+Planifiez des instantanés locaux pour une sauvegarde efficace et une restauration rapide. Les instantanés sont des images instantanées, à un moment donné, de vos volumes.
+
+* *Seuil de capacité SSD*
++
+La capacité de stockage SSD ne doit pas dépasser 80 % d'utilisation de façon continue. Le dépassement de ce seuil peut dégrader le débit et rendre les volumes de données accessibles en lecture seule, ce qui entraîne l'échec des opérations d'écriture.
+
+
+
+
+
+[[security]]
+=== Sécurité
+
+La sécurité met l'accent sur la protection des données, des systèmes et des actifs grâce à des évaluations des risques et des stratégies d'atténuation.
+
+* *Protection autonome contre les ransomwares grâce à l’IA (ARP/AI)*
++
+NetApp Autonomous Ransomware Protection avec intelligence artificielle (ARP/AI) aide à renforcer la résilience cybernétique et à protéger vos volumes contre les menaces de ransomware. Nous vous recommandons d’activer ARP/AI pour tous les volumes.
+
+
+
+
+
+[[operational-excellence]]
+=== Excellence opérationnelle
+
+L'excellence opérationnelle vise à fournir la meilleure architecture et la meilleure valeur commerciale.
+
+* *Seuil d'utilisation de la capacité de volume*
++
+NetApp recommande que la capacité du volume ne dépasse pas 80 % d'utilisation de façon continue. Cela pourrait avoir un impact sur les lectures et écritures de données de votre application. L'augmentation de la capacité du volume peut être manuelle ou automatique grâce à la fonction d'extension automatique du volume.
+
+* *Mode d'écriture des relations de cache*
++
+Pour des performances optimales, NetApp recommande le mode d'écriture du cache le mieux adapté à votre charge de travail. Le mode « write-around » offre de meilleures performances pour les charges de travail axées sur la lecture de petits fichiers, tandis que le mode « write-back » offre de meilleures performances pour les charges de travail axées sur l'écriture de fichiers volumineux.
+
+* *Taille du volume de cache ONTAP*
++
+NetApp recommande d’activer le dimensionnement automatique et le nettoyage sur les volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données fréquemment consultées (données chaudes) pour une efficacité maximale.
+
+* *Conformité de la version ONTAP*
++
+Mettez à niveau vers la dernière version d'ONTAP pour bénéficier d'une compatibilité totale, d'un support complet et d'un accès aux nouvelles fonctionnalités.
+
+
+
+
+
+[[cost-optimization]]
+=== Optimisation des coûts
+
+L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre entreprise tout en maintenant les coûts bas.
+
+* *Identifier la capacité SSD sous-utilisée*
++
+Une capacité SSD sous-utilisée peut engendrer des coûts inutiles. NetApp recommande de réduire la capacité de la couche SSD tout en maintenant une marge de 20 % d'espace libre au-dessus de la capacité actuellement utilisée. Une opération de diminution peut prendre de plusieurs heures à plusieurs jours, et le système ne prend pas en charge d'autres opérations du système de fichiers pendant cette période.
+
+* *Politique de hiérarchisation des données*
++
+Activez la hiérarchisation des données froides pour déplacer les données froides du niveau de stockage SSD vers un stockage moins coûteux. Azure Blob Storage sert de niveau de capacité pour les données inactives.
+
+
+
+.Et ensuite
+link:cvo/improve-configurations-cvo.html["Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées"]

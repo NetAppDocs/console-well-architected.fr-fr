@@ -1,0 +1,48 @@
+---
+indexpage:
+  title: Tableau de bord bien conçu dans la NetApp Console
+  summary: NetApp Console vous aide à maintenir et à exploiter des configurations
+    fiables, sécurisées, efficaces et économiques, conformes aux architectures bien
+    conçues pour le type de stockage que vous utilisez.
+  keywords: amazon, fsx, cloud volumes ontap, microsoft azure, netapp, ontap, well-architected
+    framework, NetApp Console
+  lead: NetApp Console vous aide à maintenir des configurations de stockage fiables,
+    sécurisées, efficaces et économiques, conformes à l'architecture bien conçue de
+    votre type de stockage. Le tableau de bord bien conçu offre une vue unifiée des
+    comptes et des régions, aide les équipes à identifier et à prioriser les risques,
+    et prend en charge les règles personnalisées pour des besoins spécifiques.
+  tiles:
+  - title: Commencer
+    links:
+    - title: Notes de version
+      url: "/whats-new.html"
+    - title: Découvrez le tableau de bord bien architecturé
+      url: "/learn-well-architected-dashboard.html"
+  - title: Produits pris en charge
+    links:
+    - title: Amazon FSx for NetApp ONTAP
+      url: "/fsx/configuration-analysis-fsx.html"
+    - title: Cloud Volumes ONTAP
+      url: "/cvo/configuration-analysis-cvo.html"
+  - title: Élaborez vos propres règles
+    links:
+    - title: Découvrez les règles personnalisées
+      url: "/learn-custom-rules.html"
+    - title: Créer une règle personnalisée
+      url: "/create-custom-rule.html"
+    - title: Gérer les règles personnalisées
+      url: "/manage-custom-rules.html"
+  - title: Connaissances et support
+    links:
+    - title: Inscrivez-vous pour obtenir de l'aide
+      url: "/register-support.html"
+    - title: Obtenez de l'aide
+      url: "/get-help.html"
+  - title: Blogs et communauté
+    links:
+    - title: NetApp Console
+      url: https://www.netapp.com/console
+    - title: NetApp Data Services
+      url: https://www.netapp.com/data-services/
+    - title: Communauté NetApp
+      url: https://community.netapp.com/

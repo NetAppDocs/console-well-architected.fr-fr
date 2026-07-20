@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: cvo/improve-configurations-cvo.html 
+keywords: improve configurations, optimize configurations, implement best practices, well-architected file system, Cloud Volumes ONTAP, Microsoft Azure 
+summary: 'Workload factory analyse les configurations Cloud Volumes ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l"excellence opérationnelle.' 
+---
+= Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grâce aux analyses de configuration et aux recommandations, exploitez NetApp pour mettre en œuvre les bonnes pratiques pour vos systèmes Cloud Volumes ONTAP exécutés sur le stockage Microsoft Azure. Vous pouvez facilement vérifier l'état de l'architecture, identifier les problèmes de configuration et obtenir des recommandations pour améliorer l'architecture des systèmes qui ne sont pas optimisés en termes de fiabilité, de sécurité, d'efficacité, de performance et de coût.
+
+link:configuration-analysis-cvo.html["Découvrez l'analyse de configuration et l'état bien architecturé."]
+
+
+
+[[about-this-task]]
+== À propos de cette tâche
+
+NetApp analyse quotidiennement les déploiements de systèmes Cloud Volumes ONTAP dans Microsoft Azure. L'analyse quotidienne fournit un état bien architecturé, ainsi que des informations et des recommandations pour vous aider à résoudre les problèmes de configuration afin que vos systèmes respectent les meilleures pratiques.
+
+Vous pouvez consulter les recommandations relatives aux problèmes de configuration de vos systèmes sans déployer d’agent Console ; toutefois, la connectivité avec l’agent Console permet à NetApp de fournir l’analyse la plus complète des ressources de votre système.
+
+Une fois l'analyse quotidienne terminée, le tableau de bord affiche le nombre total de ressources bien architecturées, le nombre de ressources en état critique et le nombre de ressources en état d'alerte. Les configurations sont classées selon les piliers du cadre de bonnes pratiques d'architecture : fiabilité, excellence opérationnelle, optimisation des coûts, efficacité des performances et sécurité. Le tableau de bord comprend également un tableau répertoriant toutes les configurations, le statut de bonnes pratiques d'architecture de ces configurations, la gravité, la catégorie, le type de ressource (volume ou système), les ressources impactées et la possibilité d'afficher la recommandation lorsque la configuration n'est pas optimisée.
+
+
+
+[[before-you-begin]]
+== Avant de commencer
+
+* Vous devez link:https://console.netapp.com/add-working-environment/choose-type["ajouter un système Cloud Volumes ONTAP"] vous connecter à la NetApp Console pour consulter l'état de l'architecture et les recommandations concernant les problèmes de configuration.
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html["Vous devriez déployer un agent Console"] pour l’analyse la plus complète de vos ressources système.
+
+
+
+
+[[view-recommendations-for-configuration-issues]]
+== Consultez les recommandations pour les problèmes de configuration
+
+Vous pouvez consulter les recommandations relatives aux problèmes de configuration une fois l'analyse quotidienne terminée. Les recommandations expliquent les bonnes pratiques et les risques potentiels liés aux configurations non optimisées. Vous pouvez également télécharger un fichier CSV des recommandations.
+
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.
++
+Vous pouvez également sélectionner image:button_download.png["Capture d'écran de l'icône de téléchargement"]pour télécharger un fichier CSV des recommandations pour toutes les configurations.
+
+. Examinez la recommandation.
+
+
+.Et ensuite
+Corrigez les problèmes de configuration pour garantir des performances optimales de vos systèmes.

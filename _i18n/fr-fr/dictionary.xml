@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="81193c598a9c172a3b1a1fd4ae48283f" category="doc">Présentation du tableau de bord bien conçu dans NetApp Console</block>
+  <block id="92b6fed6ba9205d1ef1ae0e1d186dfa8" category="paragraph">Le tableau de bord bien architecturé dans la NetApp Console offre une vue unique de vos systèmes de stockage et de leurs configurations, tous comptes et régions confondus. Le tableau de bord fournit des informations et des recommandations pour vous aider à atteindre l'excellence opérationnelle. Vous pouvez consulter l'état bien architecturé de vos configurations, les problèmes de configuration organisés selon les piliers du cadre bien architecturé pour le type de stockage que vous utilisez, ainsi qu'une liste des problèmes de configuration et des recommandations.</block>
+  <block id="5525eb13e3a89cfcd9f9c5e55aa357a4" category="inline-link-macro">tableau de bord bien conçu</block>
+  <block id="6e2cc6111df032359200840287f3c08f" category="paragraph">Apprenez-en davantage sur le <block ref="5f27d98a28d7d5cdbad5c60f254e5b36" category="inline-link-macro-rx"></block>.</block>
+  <block id="77411708fcf4ba6bf72f1bc14c6e4893" category="paragraph">Le tableau de bord bien conçu dans la Console est disponible pour les systèmes de stockage suivants :</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link-macro">Amazon FSx for NetApp ONTAP</block>
+  <block id="d99d7f946ceac15eeacc4a0c7735874d" category="list-text"><block ref="d99d7f946ceac15eeacc4a0c7735874d" category="inline-link-macro-rx"></block></block>
+  <block id="d9f28f14f6e934bc2dca96849f86ad2f" category="inline-link-macro">Cloud Volumes ONTAP dans Microsoft Azure</block>
+  <block id="e4ef65f45fd48bfa39ea36cadb3df4ce" category="list-text"><block ref="e4ef65f45fd48bfa39ea36cadb3df4ce" category="inline-link-macro-rx"></block></block>
+  <block id="95be701b55d8162269ca03772d2761bc" category="section-title">Créez vos propres règles personnalisées</block>
+  <block id="6b0f72e83c27494413b50e62a79dac44" category="paragraph">Rédigez des règles personnalisées en langage clair pour garantir que vos systèmes respectent les normes de votre organisation et les bonnes pratiques NetApp. Testez les règles avec une exécution à blanc, puis planifiez leur exécution dans vos environnements.</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link">En savoir plus sur les règles personnalisées</block>
+  <block id="9bd966d21188bc73353090c821e40934" category="paragraph"><block ref="9bd966d21188bc73353090c821e40934" category="inline-link-rx"></block></block>
+  <block id="502e4764bf709decaf10769de6bc6d35" category="summary">Créez une règle architecturale personnalisée utilisant le langage naturel pour appliquer vos normes organisationnelles pour FSx for ONTAP.</block>
+  <block id="cff2e3f5566a6d8510f1c58ca5513eb3" category="doc">Créer une règle personnalisée</block>
+  <block id="525a9e811bf7135ecb9c670b3288f94f" category="paragraph">Créez des règles personnalisées en les décrivant en langage clair. Le générateur de règles IA transforme votre requête en une règle validée qui vérifie vos ressources FSx for ONTAP.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">Avant de commencer</block>
+  <block id="5d9b02c1296ee6f0b859a2db7ccf523b" category="list-text">Vous avez configuré les identifiants AWS avec un accès en lecture seule.</block>
+  <block id="0876642abf2aedd4eb3ae76dd87f7586" category="list-text">Vous disposez d'identifiants ONTAP avec des autorisations de visionneuse.</block>
+  <block id="0e8e25fe832310f010ce2950b2110974" category="list-text">Vous disposez d'un lien ou d'un agent configuré pour la connectivité FSx for ONTAP.</block>
+  <block id="fadf874162a190084750a51220f07180" category="list-text">Vous comprenez que la création de règles personnalisées utilise le service d'IA Bedrock de NetApp.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">À propos de cette tâche</block>
+  <block id="4a43e7c1c8d139e6a6dad318b5a9cefb" category="paragraph">Le processus de création de règles vous guide pas à pas : définition de la règle, analyse de son interprétation par l’IA et vérification des résultats avant la planification des évaluations régulières. Vous gardez le contrôle à chaque étape. Le système suggère une règle en fonction de votre demande, mais rien n’avance tant que vous ne l’avez pas confirmée.</block>
+  <block id="536d32f8526dd0faea40f78af4cad034" category="section-title">Créer une règle</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
+  <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">expériences sur console</block>
+  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">Connectez-vous en utilisant l'un des <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>.</block>
+  <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">L'icône du menu hamburger</block>
+  <block id="fe994c2e65969f1befb57a29037e7317" category="list-text">Sélectionnez le menu <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block> puis sélectionnez *Well-architected*.</block>
+  <block id="9e0430dcbcdaff60b125b83d5a4885ff" category="list-text">Dans le menu Well-architected, sélectionnez *Rule builder*.</block>
+  <block id="3f87c61ee7c070ec896e14d55b132e25" category="paragraph">Lorsque vous ouvrez l'éditeur de règles, des exemples d'invites s'affichent pour vous aider à rédiger votre règle personnalisée. Vous pouvez sélectionner *Copier l'invite* pour copier un exemple d'invite dans la zone de texte de la boîte de dialogue AI.</block>
+  <block id="ab99baf0da39867076eea6e470865275" category="list-text">Dans le champ *Créer une règle*, saisissez la description de votre règle en langage naturel. Soyez aussi précis que possible concernant :</block>
+  <block id="d8eefaf38d3f8455541df01bc5d6831b" category="list-text">Quel type de ressource vous vérifiez (système de fichiers, volume ou cache).</block>
+  <block id="4e86c5f58eeed68b966c1b5f2cf16853" category="list-text">Quelle condition vous validez.</block>
+  <block id="dfa6d1dd6fe7783b6568e7fea39c0f7a" category="list-text">Quel seuil définit la conformité.</block>
+  <block id="7bceccf61b56c9e997b6748a3219ca2c" category="list-text">Pourquoi cette règle est importante (optionnel mais recommandé).</block>
+  <block id="7950e8546d11cf9aebf1d18723eacb62" category="inline-image-macro">L'icône de menu sert à lancer la génération des règles., width=18</block>
+  <block id="448a77fdd0ab1119d70eda7dfad65fa7" category="list-text">Sélectionnez <block ref="9bf5747e0eee12d0fcc488bd415a8bc3" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="15fc6fdd1dd9d66889237c7e8a75d290" category="paragraph">L'IA analyse votre requête et génère une définition de règle.</block>
+  <block id="1c88936123899b4423b51efeb098f008" category="section-title">Examiner l'interprétation de l'IA</block>
+  <block id="28ea3f4811ef4cb7fc2b7f08d6fce5a7" category="paragraph">Le générateur de règles affiche :</block>
+  <block id="ac95e11bdbe6b7951bc4176d753eecdb" category="list-text">*Interprétation analysée* : Comment l’IA a compris votre requête en langage clair.</block>
+  <block id="7754266bb34a8d80acb7e15270b99ec3" category="list-text">*Définition de la règle* : La règle structurée comprenant le type de ressource, la logique de condition et les critères d’évaluation.</block>
+  <block id="7c2fe3e0d58f228cda5f45d633432f17" category="list-text">*Justification* : Pourquoi l’IA a interprété votre requête de cette façon.</block>
+  <block id="76aee06db0fa09e15fccb38736a4bcf7" category="list-text">*Indicateur de confiance* : Niveau de confiance du système dans l’interprétation.</block>
+  <block id="f89784f298e9f6255c6acd2f32b4051a" category="list-text">Vérifiez l'interprétation pour vous assurer qu'elle correspond à ce que vous aviez l'intention de faire.</block>
+  <block id="c0a47630db46adfc611696cbc6259777" category="paragraph">Vérifiez que la définition de la règle est correcte. Si l'interprétation est imprécise ou erronée, le système peut poser des questions telles que : * Quelle ressource doit être vérifiée ? * Quelle valeur ou limite définit la conformité ? * À quelle fréquence la règle doit-elle être exécutée ?</block>
+  <block id="32e95e9677f9ef2f50e204cf4b6401d7" category="list-text">Répondez aux questions de clarification de l'IA.</block>
+  <block id="7d84a0d9d14a5f050503a7b9b00b3435" category="paragraph">L'IA pourrait vous proposer plusieurs options pour mieux comprendre vos besoins. Répondez à chaque question et sélectionnez *Continuer*, ou sélectionnez *Passer* pour ignorer les questions facultatives.</block>
+  <block id="f7dd96479a94850934674d003fe54f52" category="list-text">Après avoir répondu à toutes les questions, sélectionnez *Continuer* pour créer votre règle.</block>
+  <block id="66178252f08edeeeeda7bfc5ebf5227b" category="section-title">Tester la règle</block>
+  <block id="0362b2cfbfe0db96dc282024dbd64841" category="paragraph">Avant de programmer la règle, exécutez un test unique pour voir quelles ressources elle affectera.</block>
+  <block id="e0924f9cecf28912d6b59208f0ee9242" category="list-text">Sélectionnez *Valider la règle*.</block>
+  <block id="87d68b4e906936ea67c73d25fddbb199" category="paragraph">Le système évalue toutes les ressources concernées par rapport à votre logique de règles.</block>
+  <block id="6ad0887ee719e958ea66bc1d5ca7ed60" category="list-text">Examinez les résultats de la validation :</block>
+  <block id="0c1a6881568187ba2218c2798723b963" category="list-text">*Ressources évaluées* : Nombre total de ressources vérifiées</block>
+  <block id="4b5e8fb3a43e71540bec48dd1195e60d" category="list-text">*Conforme* : Ressources qui répondent aux critères de la règle</block>
+  <block id="149dc40e624cd47605b5908752da1597" category="list-text">*Non conforme* : Ressources qui ne répondent pas aux critères</block>
+  <block id="222d82b8b5728640234e4566d39a549c" category="list-text">*Évaluations ayant échoué* : Ressources qui n'ont pas pu être évaluées (avec détails d'erreur)</block>
+  <block id="6844f9bfd3027da2003f968152f2a47a" category="list-text">Si certaines ressources n'ont pas réussi l'évaluation, examinez les raisons de l'erreur :</block>
+  <block id="277990b13713bd5d1349cb0637866450" category="list-text">*Erreurs d'identifiant AWS* : Les autorisations en lecture seule peuvent être insuffisantes pour certaines ressources</block>
+  <block id="1bb9a202a6c7284b2727618b6b42d1bf" category="list-text">*Erreurs de connectivité* : le lien ou l’agent n’est peut-être pas configuré pour des systèmes de fichiers spécifiques</block>
+  <block id="6601c2de36f9d2c2a63a21c9170e4bae" category="list-text">*Erreurs d'autorisation ONTAP* : L'utilisateur visualiseur pourrait ne pas avoir accès à certaines ressources</block>
+  <block id="24a910eeb4468fa91fa54136e064eb5d" category="section-title">Enregistrer ou planifier la règle</block>
+  <block id="8c7715e49e638258c4536fec9aff1f6e" category="paragraph">Après avoir testé votre règle, vous pouvez l'enregistrer comme brouillon ou la configurer pour qu'elle s'exécute régulièrement.</block>
+  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Effectuez l'une des opérations suivantes :</block>
+  <block id="8c080127194fcaf624649c3bab095baa" category="list-text">Pour programmer une évaluation régulière, définissez la fréquence d'évaluation (minimum 1 heure, par défaut 24 heures) et sélectionnez *Schedule*. La règle est activée et s'exécute selon la planification définie.</block>
+  <block id="988a89425a3c56162fa9fed77217603a" category="list-text">Pour enregistrer sans programmer, sélectionnez *Enregistrer comme brouillon*. La règle est enregistrée mais n'est évaluée que lorsque vous la programmez.</block>
+  <block id="f3448dd91675f24e9473969b2f303b47" category="list-text">Pour supprimer la règle, sélectionnez *Discard* pour annuler la création de la règle et recommencer.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="8e89c0ba0d3b83aea36ecc1be4cfe4fb" category="paragraph">Votre règle personnalisée a été créée et figure dans le catalogue des règles. Si vous définissez une planification, elle vérifiera vos ressources FSx for ONTAP à la fréquence spécifiée.</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">Dépannage</block>
+  <block id="ad7ea03a306fd66841c171a6885f7b14" category="list-text">Aucun système de fichiers disponible</block>
+  <block id="9f6cf15e71e56dca004ae4af5511fdc6" category="list-text">Configurez vos identifiants AWS et assurez-vous que votre environnement dispose d'au moins un système de fichiers FSx for ONTAP. Le générateur de règles a besoin d'un système de fichiers pour appliquer les règles.</block>
+  <block id="15a9422f3948ed951664141901f605d9" category="list-text">Interprétation à faible confiance</block>
+  <block id="d901db1e2096f8ef858f5f7e7e04f829" category="list-text">Des informations supplémentaires sont nécessaires. Répondez aux questions ou reformulez votre demande en précisant clairement le type de ressource, ses limites et ses conditions.</block>
+  <block id="ce332e562b5422b101c4ea54a309f0c9" category="list-text">Échecs de validation partielle</block>
+  <block id="a4bffcd84e8416b02d243a51aa82cb84" category="list-text">Vérifiez quelles ressources ont échoué et pourquoi. Les causes fréquentes sont des paramètres de lien ou d'agent manquants, ou des autorisations insuffisantes. Corrigez le problème, puis validez à nouveau.</block>
+  <block id="7720c57b7119d10e920558f513246c98" category="list-text">Invite ambiguë</block>
+  <block id="57aa8a34f1c34817409a7bb0fcc62dde" category="list-text">Précisez davantage ce que vous souhaitez vérifier. Indiquez le type de ressource, la condition et le seuil. Consultez les exemples d'invites pour obtenir de l'aide.</block>
+  <block id="319de2ebfe72521f2551d5fa11e01fd5" category="list-text">La règle cible plusieurs types de ressources</block>
+  <block id="9614a11d3defd26388181526016cb85d" category="list-text">Créez une règle distincte pour chaque type de ressource. Un seul type de ressource par règle est pris en charge.</block>
+  <block id="3f710cadb0123c693533da68aaf5b596" category="section-title">Que faire ensuite</block>
+  <block id="79d32aa7b3e52f3c6db178577378b427" category="inline-link-macro">Gérer les règles personnalisées</block>
+  <block id="f571cd95e32f7c421382198bc0dd0eae" category="paragraph"><block ref="f571cd95e32f7c421382198bc0dd0eae" category="inline-link-macro-rx"></block></block>
+  <block id="f72f6cfe102f777741a1c23bd3519299" category="summary">NetApp Console analyse quotidiennement les configurations du système de stockage afin de déterminer s'il existe des problèmes de configuration.</block>
+  <block id="109cdb23e41e8df9e7f4319a28a800c9" category="doc">Analyse de configuration pour Cloud Volumes ONTAP</block>
+  <block id="7711c6e829f186d665b119ea7cbac7a9" category="paragraph">NetApp Console analyse régulièrement la configuration des systèmes de stockage afin de détecter d'éventuels problèmes. Lorsque des problèmes sont détectés, la Console vous indique la nature des problèmes et vous explique les modifications à apporter pour garantir des performances optimales, une rentabilité maximale et la conformité aux bonnes pratiques de vos systèmes de stockage.</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">Principales fonctionnalités :</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">Analyse quotidienne de la configuration</block>
+  <block id="d0367f15d2fd772d543d692442807fa1" category="list-text">Validations automatiques des bonnes pratiques pour les systèmes de stockage NetApp ONTAP et les fournisseurs de stockage partenaires</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">Observabilité proactive</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">Des idées à l'action</block>
+  <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">Exigences d'analyse</block>
+  <block id="021c4674734853c034b954078fa080f3" category="inline-link-macro">déployer un agent NetApp Console</block>
+  <block id="9b445cfda1179eae13555c376ac10ad3" category="paragraph">Pour une analyse complète du système Cloud Volumes ONTAP, vous devez <block ref="19a2c83f86e8c849ea6629f601093445" category="inline-link-macro-rx"></block>. La connectivité de l’agent Console permet à la Console d’analyser toutes les configurations du système Cloud Volumes ONTAP, telles que la protection des données et les performances.</block>
+  <block id="f064aed6dd86a2b762ecf9bcf528b941" category="section-title">Bonnes pratiques et recommandations pour les systèmes Cloud Volumes ONTAP</block>
+  <block id="c2bcefffc88ff83198b89fb2d983e8e2" category="paragraph">NetApp évalue les configurations de stockage afin de fournir une vue approfondie des bonnes pratiques de configuration ONTAP et de la conformité au cadre Azure Well-Architected. L'évaluation recommande également des améliorations et des correctifs.</block>
+  <block id="ffd9fc00ab43b8283346c6266e00d684" category="paragraph">L'analyse bien conçue catégorise les configurations selon les piliers suivants du cadre : _fiabilité_, _sécurité_, _excellence opérationnelle_, _optimisation des coûts_ et _efficacité des performances_.</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">Fiabilité</block>
+  <block id="32293fdcb7dff0798e6d06da4b108ce6" category="paragraph">La fiabilité garantit que les charges de travail exécutent leurs fonctions prévues correctement et de manière constante, même en cas de perturbations.</block>
+  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*Planifiez des instantanés locaux*</block>
+  <block id="ce36269ae95cd0ab7422d78bb843b720" category="paragraph">Planifiez des instantanés locaux pour une sauvegarde efficace et une restauration rapide. Les instantanés sont des images instantanées, à un moment donné, de vos volumes.</block>
+  <block id="eb995e3e26a9ce43e4cb513af9782398" category="list-text">*Seuil de capacité SSD*</block>
+  <block id="17a08b60247ab6f3cd8125402b1289e8" category="paragraph">La capacité de stockage SSD ne doit pas dépasser 80 % d'utilisation de façon continue. Le dépassement de ce seuil peut dégrader le débit et rendre les volumes de données accessibles en lecture seule, ce qui entraîne l'échec des opérations d'écriture.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">Sécurité</block>
+  <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">La sécurité met l'accent sur la protection des données, des systèmes et des actifs grâce à des évaluations des risques et des stratégies d'atténuation.</block>
+  <block id="d08117d717007eeb4d6273695d9a7725" category="list-text">*Protection autonome contre les ransomwares grâce à l’IA (ARP/AI)*</block>
+  <block id="167fce45da752e074139dbfd85f1d96d" category="paragraph">NetApp Autonomous Ransomware Protection avec intelligence artificielle (ARP/AI) aide à renforcer la résilience cybernétique et à protéger vos volumes contre les menaces de ransomware. Nous vous recommandons d’activer ARP/AI pour tous les volumes.</block>
+  <block id="17d2a91a4f3c01de4c2f05b2242e49d3" category="section-title">Excellence opérationnelle</block>
+  <block id="84c2d06d655e822b38b222df9c0aa965" category="paragraph">L'excellence opérationnelle vise à fournir la meilleure architecture et la meilleure valeur commerciale.</block>
+  <block id="32438b829cdc61174e9727896ad00733" category="list-text">*Seuil d'utilisation de la capacité de volume*</block>
+  <block id="e973d533a0ae133a86d3a32d9c71df3f" category="paragraph">NetApp recommande que la capacité du volume ne dépasse pas 80 % d'utilisation de façon continue. Cela pourrait avoir un impact sur les lectures et écritures de données de votre application. L'augmentation de la capacité du volume peut être manuelle ou automatique grâce à la fonction d'extension automatique du volume.</block>
+  <block id="dea8be5f351d7ba412ea10951c1fe16c" category="list-text">*Mode d'écriture des relations de cache*</block>
+  <block id="6ca1e17b2494653a565ef0a387421fee" category="paragraph">Pour des performances optimales, NetApp recommande le mode d'écriture du cache le mieux adapté à votre charge de travail. Le mode « write-around » offre de meilleures performances pour les charges de travail axées sur la lecture de petits fichiers, tandis que le mode « write-back » offre de meilleures performances pour les charges de travail axées sur l'écriture de fichiers volumineux.</block>
+  <block id="172f50b41b5736d316b29512e1c1cc01" category="list-text">*Taille du volume de cache ONTAP*</block>
+  <block id="c9eaece9ad2e9f2b182ab193795510eb" category="paragraph">NetApp recommande d’activer le dimensionnement automatique et le nettoyage sur les volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données fréquemment consultées (données chaudes) pour une efficacité maximale.</block>
+  <block id="7f14df7d96b168d75780c47437a63021" category="list-text">*Conformité de la version ONTAP*</block>
+  <block id="3bbb5a399ebdfb8d2d4a8a5c7bafb3fb" category="paragraph">Mettez à niveau vers la dernière version d'ONTAP pour bénéficier d'une compatibilité totale, d'un support complet et d'un accès aux nouvelles fonctionnalités.</block>
+  <block id="a39ae09f8be4327fc176cfeb76a0e366" category="section-title">Optimisation des coûts</block>
+  <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre entreprise tout en maintenant les coûts bas.</block>
+  <block id="7a9a8f4f357fd479616721650f578eab" category="list-text">*Identifier la capacité SSD sous-utilisée*</block>
+  <block id="e0cb484e5dc0a5e8f28522404fbb8bd3" category="paragraph">Une capacité SSD sous-utilisée peut engendrer des coûts inutiles. NetApp recommande de réduire la capacité de la couche SSD tout en maintenant une marge de 20 % d'espace libre au-dessus de la capacité actuellement utilisée. Une opération de diminution peut prendre de plusieurs heures à plusieurs jours, et le système ne prend pas en charge d'autres opérations du système de fichiers pendant cette période.</block>
+  <block id="d8789f9e1c2f22ea67573de6c6a2a782" category="list-text">*Politique de hiérarchisation des données*</block>
+  <block id="3f13a901b4c6ed36f4bf5c5510e9ed24" category="paragraph">Activez la hiérarchisation des données froides pour déplacer les données froides du niveau de stockage SSD vers un stockage moins coûteux. Azure Blob Storage sert de niveau de capacité pour les données inactives.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et ensuite</block>
+  <block id="12959707639320f789d4bb4fbba777f1" category="inline-link-macro">Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées</block>
+  <block id="70c25ce13f84b6cf616c5c5393012e5d" category="paragraph"><block ref="70c25ce13f84b6cf616c5c5393012e5d" category="inline-link-macro-rx"></block></block>
+  <block id="17971bad5bbff77e668b69daffb7a446" category="summary">Workload factory analyse les configurations Cloud Volumes ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l'excellence opérationnelle.</block>
+  <block id="a5f72f42d4d49e54f3c4c72a4faac290" category="paragraph">Grâce aux analyses de configuration et aux recommandations, exploitez NetApp pour mettre en œuvre les bonnes pratiques pour vos systèmes Cloud Volumes ONTAP exécutés sur le stockage Microsoft Azure. Vous pouvez facilement vérifier l'état de l'architecture, identifier les problèmes de configuration et obtenir des recommandations pour améliorer l'architecture des systèmes qui ne sont pas optimisés en termes de fiabilité, de sécurité, d'efficacité, de performance et de coût.</block>
+  <block id="2481fd47e889a8c5be960ceeee3fc039" category="inline-link-macro">Découvrez l'analyse de configuration et l'état bien architecturé.</block>
+  <block id="87e3cbe1631f11a9fa503588a98c8d88" category="paragraph"><block ref="87e3cbe1631f11a9fa503588a98c8d88" category="inline-link-macro-rx"></block></block>
+  <block id="1c31ded7e3708463611bd34d13318a27" category="paragraph">NetApp analyse quotidiennement les déploiements de systèmes Cloud Volumes ONTAP dans Microsoft Azure. L'analyse quotidienne fournit un état bien architecturé, ainsi que des informations et des recommandations pour vous aider à résoudre les problèmes de configuration afin que vos systèmes respectent les meilleures pratiques.</block>
+  <block id="bf913b7a370892c7cb1f33a829e6caa1" category="paragraph">Vous pouvez consulter les recommandations relatives aux problèmes de configuration de vos systèmes sans déployer d’agent Console ; toutefois, la connectivité avec l’agent Console permet à NetApp de fournir l’analyse la plus complète des ressources de votre système.</block>
+  <block id="201778c0d89f33125a6402f974422153" category="paragraph">Une fois l'analyse quotidienne terminée, le tableau de bord affiche le nombre total de ressources bien architecturées, le nombre de ressources en état critique et le nombre de ressources en état d'alerte. Les configurations sont classées selon les piliers du cadre de bonnes pratiques d'architecture : fiabilité, excellence opérationnelle, optimisation des coûts, efficacité des performances et sécurité. Le tableau de bord comprend également un tableau répertoriant toutes les configurations, le statut de bonnes pratiques d'architecture de ces configurations, la gravité, la catégorie, le type de ressource (volume ou système), les ressources impactées et la possibilité d'afficher la recommandation lorsque la configuration n'est pas optimisée.</block>
+  <block id="e30c066b362527ca1f723c8014e57d99" category="inline-link-macro">ajouter un système Cloud Volumes ONTAP</block>
+  <block id="c4c1a72a07169f082f4b7b2689d91958" category="list-text">Vous devez <block ref="17b4c324562b043f43cc70bbb41ce6a4" category="inline-link-macro-rx"></block> vous connecter à la NetApp Console pour consulter l'état de l'architecture et les recommandations concernant les problèmes de configuration.</block>
+  <block id="fa3c49e6d904ccc316884124db538c80" category="inline-link-macro">Vous devriez déployer un agent Console</block>
+  <block id="6f755443a37d2fb7f4775c7cefc301b7" category="list-text"><block ref="174310914308fb5bace42632652b5281" category="inline-link-macro-rx"></block> pour l’analyse la plus complète de vos ressources système.</block>
+  <block id="dcb0a348dec9ffce3278d13bff1c7da7" category="section-title">Consultez les recommandations pour les problèmes de configuration</block>
+  <block id="6009b7f908736a38ec848f94ec4b8a4e" category="paragraph">Vous pouvez consulter les recommandations relatives aux problèmes de configuration une fois l'analyse quotidienne terminée. Les recommandations expliquent les bonnes pratiques et les risques potentiels liés aux configurations non optimisées. Vous pouvez également télécharger un fichier CSV des recommandations.</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link-macro">NetApp Console</block>
+  <block id="5838891146d1517c2bdea92fd1f98c7f" category="list-text">Connectez-vous au <block ref="7416259fdf1662634baa26751ef5cd92" category="inline-link-macro-rx"></block>.</block>
+  <block id="5d07c8c0e1946ad6923d8bc50ccba66a" category="list-text">Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.</block>
+  <block id="92e45b59d28c615a7b86f55da10b94f4" category="list-text">Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.</block>
+  <block id="a986c1177dbf821528da387099394568" category="inline-image-macro">Capture d'écran de l'icône de téléchargement</block>
+  <block id="12fb11593709031df8791d4256219091" category="paragraph">Vous pouvez également sélectionner <block ref="c3c5eb7aac1d65e20d3c0a3a1b74a986" category="inline-image-macro-rx" type="image"></block>pour télécharger un fichier CSV des recommandations pour toutes les configurations.</block>
+  <block id="a1a31d23ff3b3c49f603bdfad41624a7" category="list-text">Examinez la recommandation.</block>
+  <block id="8f6fc7ab8dca3a508e79c4cddacfe4a7" category="paragraph">Corrigez les problèmes de configuration pour garantir des performances optimales de vos systèmes.</block>
+  <block id="e35b0fe1641c884bf97977bfc604174f" category="summary">NetApp Console analyse régulièrement les configurations du système de stockage afin de déterminer s'il existe des problèmes de configuration.</block>
+  <block id="56f8181fa25efca14808cd61ff615728" category="doc">Analyse de configuration pour Amazon FSx for NetApp ONTAP</block>
+  <block id="b851d3c26ef63153cd7ef78769275781" category="paragraph">NetApp Console analyse régulièrement les configurations des systèmes de stockage afin de déterminer s'il existe des problèmes de configuration. Lorsque des problèmes sont détectés, NetApp Console vous indique quels sont les problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une efficacité des coûts et la conformité aux meilleures pratiques.</block>
+  <block id="ccfc2060f8f316d0ccd33b0289111a38" category="paragraph">Pour une analyse complète du système de fichiers, vous devez procéder comme suit :</block>
+  <block id="8c696f376388c7710b3ca416a2bc8c23" category="inline-link-macro">Déployer un agent NetApp Console</block>
+  <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">associer un lien</block>
+  <block id="bb42975f366470aeb5b03d6f1807d353" category="list-text"><block ref="e519545489e6eab66fe63f918fb84c99" category="inline-link-macro-rx"></block> ou <block ref="a06f2f34fedf48ea46300ba646899766" category="inline-link-macro-rx"></block>. L’agent de la console et la connectivité des liens permettent à la NetApp Console d’analyser toutes les configurations du système de fichiers, telles que la protection des données et les performances.</block>
+  <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">Accordez les autorisations de _visualisation, de planification et d'analyse_ dans votre compte AWS.</block>
+  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">Découvrez comment accorder des autorisations à un compte AWS</block>
+  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
+  <block id="c6ee17dfa8bb85cfb470ccbc889f031c" category="section-title">Meilleures pratiques et recommandations pour les charges de travail de stockage</block>
+  <block id="3ad2aab338d1221057b35359a78c6ff4" category="paragraph">Workload Factory évalue les configurations de stockage par rapport aux meilleures pratiques ONTAP et au cadre AWS Well-Architected. L'évaluation recommande également des améliorations et des corrections.</block>
+  <block id="8994ec75ad87cef8edf4cf8eae6b4e4c" category="list-text">*Planifier les sauvegardes de volumes*</block>
+  <block id="3bacc0d1986b203b432f61110667b3d7" category="paragraph">La sauvegarde de vos volumes contribue à la conservation des données et au respect des exigences de conformité. Utilisez les sauvegardes de volumes pour configurer des sauvegardes et une conservation automatisées de vos données.</block>
+  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">*Réplication interrégionale*</block>
+  <block id="152d89843ca63a94df485f882e2be60d" category="paragraph">La réplication interrégionale garantit que vos données sont répliquées vers une autre région AWS, offrant une durabilité et une disponibilité des données accrues. Workload Factory recommande de configurer la réplication interrégionale pour aider à la reprise après sinistre et à la conformité.</block>
+  <block id="1efec9308ce64129e1db77dd8baa679c" category="list-text">*Configurer la réplication des données*</block>
+  <block id="793435fc062d4d74518687597c405959" category="paragraph">Pour renforcer la fiabilité des données, celles-ci peuvent être répliquées sur un système de fichiers FSx for ONTAP situé dans la même région ou dans une autre région. Configurez la réplication des données pour prendre en charge la migration, la reprise après sinistre et la conservation à long terme entre systèmes de fichiers.</block>
+  <block id="4776b32ae8a508cea6dc14786e7b1d3f" category="list-text">*Augmenter le seuil de capacité SSD*</block>
+  <block id="9692adf4fc7a278531d8639daa5e7ce5" category="paragraph">La capacité du niveau de stockage SSD ne doit pas dépasser 80 % d'utilisation. Cela pourrait impacter les lectures et écritures de données sur votre niveau de stockage de pool de capacité et affecter la capacité de débit de votre système de fichiers. En cas de manque de capacité, les volumes de données deviennent en lecture seule. Les services tentant d'écrire de nouvelles données échouent également.</block>
+  <block id="52dcb980883fc7c1570f6f9c4c6e4f47" category="list-text">*Associez les étiquettes pour garantir la fiabilité des données*</block>
+  <block id="6b684c41f8808f2d21748ed56ee909d7" category="paragraph">Les étiquettes de la stratégie d'instantané du volume source et les étiquettes de la stratégie de réplication doivent correspondre pour garantir la fiabilité des données.</block>
+  <block id="ec75a1c7b766068775fc7894ddaf83e4" category="list-text">*Augmenter le seuil de capacité des fichiers*</block>
+  <block id="2154e32e217772c919df25662fc5e276" category="paragraph">Il convient d'augmenter le seuil de capacité des fichiers afin d'éviter d'atteindre la limite de capacité du volume. Une capacité de fichiers insuffisante (en inodes) empêche l'écriture de données supplémentaires sur le volume. Workload Factory recommande de maintenir l'utilisation de la capacité des fichiers en dessous de 80 %. La capacité de fichiers disponible est nécessaire pour créer de nouveaux fichiers sur le volume.</block>
+  <block id="6b164cf17f1cd008f12b094341cb3264" category="list-text">*Activer ARP/AI*</block>
+  <block id="3c93b584a7552b941c7752fec865d7f1" category="paragraph">NetApp Autonomous Ransomware Protection avec intelligence artificielle (ARP/AI) aide à protéger vos volumes contre les menaces de ransomware. Workload Factory recommande d'activer ARP/AI pour tous les volumes.</block>
+  <block id="1218a704bef91508c259c867ba832d76" category="list-text">*Accès non autorisé aux volumes*</block>
+  <block id="5f11ab37407484ede3169d7e37c9e28b" category="paragraph">Les volumes hébergeant des données applicatives via iSCSI ne doivent pas autoriser simultanément l'accès NAS. Workload Factory recommande de restreindre l'utilisation d'autres protocoles sur les volumes iSCSI.</block>
+  <block id="aae272278ce139a51849ab88adc7d597" category="paragraph">L'excellence opérationnelle vise à fournir l'architecture la plus optimale et la valeur commerciale.</block>
+  <block id="2e8c868875c81824742ded82e0ff9518" category="list-text">*Activer la gestion de la capacité*</block>
+  <block id="c2af0d35add26707ebd7d7030d750beb" category="paragraph">La gestion de la capacité automatique doit être activée afin de garantir régulièrement que la couche SSD ne dépasse pas le seuil.</block>
+  <block id="938de8c74e8e4f67c370d24df8ab0411" category="paragraph">Workload Factory recommande que la capacité du volume n’excède pas 80 % d’utilisation de façon continue. Cela pourrait affecter les lectures et écritures de données de votre application. Les augmentations de capacité du volume peuvent être manuelles ou automatiques grâce à la fonction d’extension automatique du volume.</block>
+  <block id="900f4b8178b38a2b7075005f38bd4a08" category="list-text">*Utilisation du volume presque saturé*</block>
+  <block id="1771306e58ae20ceab27a04d0b17adcd" category="paragraph">Lorsqu'un volume approche de sa pleine capacité, Workload Factory recommande de prendre des mesures pour augmenter la capacité du volume afin d'éviter de potentielles interruptions d'application.</block>
+  <block id="a58ce95d0ee8f9d592643a6f31d60878" category="paragraph">Pour des performances optimales, Workload Factory recommande le mode d'écriture du cache le mieux adapté à votre charge de travail. Le mode write-around offre de meilleures performances pour les charges de travail à forte intensité de lecture avec des fichiers de petite taille, tandis que le mode write-back offre de meilleures performances pour les charges de travail à forte intensité d'écriture avec des fichiers volumineux.</block>
+  <block id="3a3b30a3337caa5b953626eb873e3e6b" category="list-text">*Optimiser la taille du volume de cache*</block>
+  <block id="3f8b3943fba700ffad94c47ef4638509" category="paragraph">Workload Factory recommande d'activer le dimensionnement automatique des volumes et le scrubbing sur les volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données chaudes pour une efficacité maximale.</block>
+  <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*Rapport logique de Storage VM*</block>
+  <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">Workload Factory recommande que le paramètre de rapport par défaut soit défini sur logique pour une machine virtuelle de stockage afin de fournir une meilleure visibilité sur l'utilisation du stockage au niveau du volume.</block>
+  <block id="ff879d0ae47ba423426718c1437f43bc" category="list-text">*Optimisez le TCO en hiérarchisant les données froides*</block>
+  <block id="f71c43abfbda1f4409b6076092997c88" category="paragraph">Activez la hiérarchisation des données inactives pour réduire l'utilisation du stockage SSD. Workload Factory recommande d'appliquer une stratégie de hiérarchisation à chaque volume. FSx for ONTAP analyse les données en continu pour détecter les données inactives et les déplacer vers le niveau de stockage de capacité sans interruption.</block>
+  <block id="7cee9f2699d966625a5743c41334d168" category="list-text">*Activer les efficacités de stockage*</block>
+  <block id="a97dffed0cf7eab28dd24e64546425b8" category="paragraph">Activez les techniques d'efficacité du stockage — compactage, compression et déduplication — pour optimiser l'utilisation du stockage et réduire le coût de la couche SSD.</block>
+  <block id="fed8dca8f704b8520ccccb85704d4336" category="list-text">*Suppression inutile de snapshots et de sauvegardes*</block>
+  <block id="0c3c1c3be816da545548a0d1ddb8eab2" category="paragraph">Les instantanés et les sauvegardes qui ne sont plus nécessaires doivent être supprimés pour réduire les coûts.</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*Périphériques de blocs inactifs*</block>
+  <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">Après qu’un périphérique de stockage par blocs n’est pas utilisé pendant sept jours, Workload Factory recommande d’archiver les données du périphérique de stockage par blocs ou de supprimer le périphérique inutilisé afin de réduire les coûts.</block>
+  <block id="f915580ac605b8302594b2e8b9e200c4" category="list-text">*Capacité SSD sous-utilisée*</block>
+  <block id="7a5f4ce0958e9cefd252cd5aafc4efe8" category="paragraph">Une capacité SSD sous-utilisée engendre des coûts inutiles. Workload Factory recommande de réduire la capacité de la couche SSD tout en maintenant une marge d'espace libre de 20 % au-dessus de la capacité actuellement utilisée. Une opération de réduction peut prendre de plusieurs heures à plusieurs jours, et le système ne prend pas en charge d'autres opérations sur le système de fichiers pendant cette période.</block>
+  <block id="934fd3399568391e103ee0d773bf954d" category="list-text">*Volumes NAS inactifs*</block>
+  <block id="ad888b2fc1946f3bc7c47013f4399476" category="paragraph">L'analyse de configuration identifie les volumes NAS qui ne sont pas utilisés activement et recommande de les supprimer ou de les archiver afin de réduire les coûts.</block>
+  <block id="e8355e7c1132891c80c2af3110068130" category="inline-link-macro">Implémentez des configurations de système de fichiers Amazon FSx for NetApp ONTAP bien architecturées</block>
+  <block id="1ee8c065d47cecf380fd9841f303d49a" category="paragraph"><block ref="1ee8c065d47cecf380fd9841f303d49a" category="inline-link-macro-rx"></block></block>
+  <block id="b8bfbf72dc92e989a0b91cd409144076" category="summary">Workload factory analyse les configurations Amazon FSx for NetApp ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l'excellence opérationnelle.</block>
+  <block id="72df52ed3a20abfa3d207dfbc53e2ae4" category="paragraph">Directive non résolue dans &lt;stdin&gt; - include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/improve-configurations-fsx.adoc[]</block>
+  <block id="79e27ec6fe4e85288757fae779bab815" category="inline-link-macro">accorder les autorisations d'_opérations et de remédiation_</block>
+  <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">Vous devez <block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block> dans votre compte AWS.</block>
+  <block id="a9d8fc136a7c1528e9a5743b9de2661a" category="inline-link-macro">Connectez-vous à un système de fichiers FSx for ONTAP à l'aide d'un lien</block>
+  <block id="bdcff0916b9de421b3f836810688eb67" category="list-text"><block ref="f06ee96e93460df1397f1b3b70044a3e" category="inline-link-macro-rx"></block>pour l’analyse la plus complète de vos ressources de système de fichiers.</block>
+  <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">Résoudre un problème de configuration</block>
+  <block id="4d39d4688820662a72b89ef0ab12f050" category="paragraph">Vous pouvez corriger les problèmes de configuration d'un système de fichiers Amazon FSx for NetApp ONTAP ou de volumes sélectionnés au sein d'un système de fichiers. Vous pouvez sélectionner une ou plusieurs configurations à corriger.</block>
+  <block id="cd375ffa56c1139e1dfd8d14cf3947db" category="paragraph">Le processus de correction peut entraîner des indisponibilités d'instance ou des interruptions de service. Examinez attentivement chaque recommandation avant de corriger un problème de configuration.</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration.</block>
+  <block id="757a7ffb20a279d7239febb013141ad5" category="list-text">Sélectionnez le menu <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> puis sélectionnez *Stockage*.</block>
+  <block id="8c8656579a32ab7e80c68b10832337bb" category="list-text">Dans le menu Stockage, sélectionnez *Well-architected*.</block>
+  <block id="4f5fc99db78476b3b87fbb795ab55b26" category="list-text">Sélectionnez *Afficher les problèmes* pour toute configuration. Assurez-vous de lire attentivement la recommandation.</block>
+  <block id="c9e425055996f71ecfc858708d926276" category="paragraph">Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.</block>
+  <block id="8e369a2580b67427ac856eea6e4e3eb6" category="list-text">Sélectionnez *Corriger*.</block>
+  <block id="fe5f70c74405942514095d724e090b64" category="paragraph">Lorsque l’option *Afficher et corriger* est disponible, sélectionnez les volumes concernés à corriger.</block>
+  <block id="44642e2ce79e19a13d96c2540f6a27e3" category="list-text">Consultez le résumé et les actions à entreprendre qui s'affichent dans la boîte de dialogue pour savoir ce qui se passe lorsque vous résolvez le problème. Certaines opérations peuvent entraîner des indisponibilités de l'instance ou des interruptions de service.</block>
+  <block id="45b5dce37159255d07342e3102124571" category="list-text">Sélectionnez *Continuer* pour résoudre le problème de configuration.</block>
+  <block id="7b0f67aaae9855ca81dfbbf20c5abb2e" category="paragraph">Workload Factory lance le processus de résolution du problème. Sélectionnez le menu des paramètres du compte, puis *Tracker* pour consulter l'état de l'opération.</block>
+  <block id="a46fab6bb1626887eac54858dc05cb71" category="section-title">Rejeter une analyse de configuration</block>
+  <block id="c4a4ce88451c96d395c6edf379a3e2a5" category="paragraph">Interrompez l'analyse de configuration pour un système de fichiers Amazon FSx for NetApp ONTAP ou pour des volumes sélectionnés. Vous pouvez relancer l'analyse si nécessaire.</block>
+  <block id="790f15f2dc58a8507d72b3246a8877ab" category="open-title">Rejeter une analyse de configuration pour un système de fichiers</block>
+  <block id="7e12ec579b2b712008a0313c32f73260" category="list-text">Dans la section Configurations, identifiez la configuration qui ne s'applique pas à votre environnement et sélectionnez ensuite *Ignorer*.</block>
+  <block id="36ed461a33f462df70ba0e617165352a" category="list-text">Dans la boîte de dialogue de configuration « Ignorer », sélectionnez *Ignorer* pour arrêter l’analyse de configuration.</block>
+  <block id="894ee870661e494e23b4326cec5b3c29" category="open-title">Rejeter une analyse de configuration pour un volume</block>
+  <block id="fb900cd761e703345ca42d9399cd972d" category="list-text">Sous Configurations, identifiez la configuration à ignorer pour les volumes sélectionnés, puis sélectionnez *View and fix*.</block>
+  <block id="9edc5f9fb0843e696753808946138519" category="list-text">Identifiez les volumes à exclure de l'analyse de configuration.</block>
+  <block id="66fc3121113a1126522690fe858e4b3d" category="list-text">Pour un seul volume : sélectionnez le menu Actions, puis sélectionnez *Ignorer le volume*.</block>
+  <block id="3f889fd8964613c4779327d83f4c785f" category="list-text">Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Ignorer* à côté de Bulk action.</block>
+  <block id="7efbc096eb8818df22ad0ea26cc99905" category="list-text">Sélectionnez *Ignorer* pour interrompre l'analyse de la configuration.</block>
+  <block id="2773330e4a665ad4a0b2217458b38f4d" category="list-text">Dans la boîte de dialogue Ignorer les volumes, sélectionnez *Ignorer* pour confirmer.</block>
+  <block id="4efb66376fe86e922a4b798dd8aa07fa" category="paragraph">L'analyse de configuration s'arrête pour le système de fichiers ou les volumes sélectionnés.</block>
+  <block id="d79f48b1f7163b05a476d3852791da7f" category="paragraph">Vous pouvez réactiver l'analyse à tout moment.</block>
+  <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">Réactiver une analyse de configuration rejetée</block>
+  <block id="99206ff00921c00b5d887375a108d167" category="paragraph">Réactivez à tout moment une analyse de configuration annulée. Vous pouvez sélectionner une ou plusieurs configurations à réactiver.</block>
+  <block id="15adceeecdf87115b046ea511022c89f" category="open-title">Réactiver une analyse de configuration pour un système de fichiers</block>
+  <block id="e1b530152da44e105ca4a8d377616f64" category="list-text">Sélectionnez *Configurations rejetées*.</block>
+  <block id="6cc17f569421e25f5da482d49cdd0b5e" category="list-text">Identifiez la configuration que vous souhaitez réactiver et sélectionnez *Réactiver*.</block>
+  <block id="bdd22c2e5887702579495ffc45a2a208" category="open-title">Réactiver une analyse de configuration pour un volume</block>
+  <block id="a6d91f466d4bad114b9a0f88a90da3cd" category="list-text">Identifiez le(s) volume(s) à réactiver à partir de l'analyse de configuration.</block>
+  <block id="bac7c367211d21ad06604f0cd3ce59fd" category="list-text">Pour un volume : sélectionnez le menu Actions, puis sélectionnez *Réactiver le volume*.</block>
+  <block id="98962b66e5cd6d68ed29081a50cd1c88" category="list-text">Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Réactiver* à côté de Bulk action.</block>
+  <block id="77b9268ed80b17f39e2b280a439b5a22" category="paragraph">Le système réactive l'analyse de configuration. Une nouvelle analyse a lieu chaque jour.</block>
+  <block id="a99fab69b8aa9775fe1767ce605ae8bd" category="summary">NetApp propose une assistance pour la NetApp Console de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription à l'assistance inclut un support technique à distance via la gestion de tickets en ligne.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenez de l'aide</block>
+  <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp propose une assistance pour NetApp Console et ses services cloud de différentes manières. De nombreuses options d’assistance en libre-service gratuites sont disponibles 24h/24 et 7j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription à l’assistance inclut un support technique à distance via un système de tickets en ligne.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenez de l'aide pour un service de fichiers de fournisseur de cloud</block>
+  <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">Pour toute assistance technique relative à un fournisseur de cloud service de fichiers, à son infrastructure ou à toute solution utilisant ce service, veuillez vous référer à la documentation du produit.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSx for NetApp ONTAP</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="list-text"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="153836c062a78213f2aa165322254aa4" category="list-text"><block ref="153836c062a78213f2aa165322254aa4" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="0d592360c983f234b130127efee38805" category="list-text"><block ref="0d592360c983f234b130127efee38805" category="inline-link-macro-rx"></block></block>
+  <block id="68e6fe8cde496154d24fd032b4262070" category="paragraph">Pour bénéficier d'une assistance technique spécifique à NetApp et à ses solutions de stockage et services de données, utilisez les options d'assistance décrites ci-dessous.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilisez les options d'auto-assistance</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentation</block>
+  <block id="5bb94d173380c00577f5e04b6f26bb94" category="paragraph">La documentation NetApp Console que vous consultez actuellement.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="0e20091afcea2d83d0033a933ba85092" category="paragraph">Recherchez dans la base de connaissances NetApp pour trouver des articles utiles pour résoudre les problèmes.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="777d75a90b107e4f18469f82c4f81fe2" category="paragraph">Rejoignez la communauté NetApp Console pour suivre les discussions en cours ou en créer de nouvelles.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créer un dossier auprès du support NetApp</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">En plus des options d'auto-assistance ci-dessus, vous pouvez collaborer avec un spécialiste du support NetApp pour résoudre tout problème après l'activation du support.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">Avant de commencer</block>
+  <block id="c406bf0ac8ac87bc5bb7132a7351b2ae" category="inline-link">Découvrez comment gérer les identifiants associés à votre connexion NetApp Console</block>
+  <block id="377118f28487e70bd456993144b72fc7" category="list-text">Pour utiliser la fonctionnalité *Créer un dossier*, vous devez d'abord associer vos identifiants du site de support NetApp à votre identifiant de connexion à la Console.<block ref="68c4321a756e3ffe955b62cff6fea46d" category="inline-link-rx"></block>.</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si vous ouvrez un dossier pour un système ONTAP qui possède un numéro de série, votre compte NSS doit être associé au numéro de série de ce système.</block>
+  <block id="0ab80a63088581d58dcf067051f4c894" category="list-text">Dans la NetApp Console, sélectionnez *Aide &gt; Support*.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous Technical Support :</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Sélectionnez *Nous appeler* si vous souhaitez parler à quelqu'un par téléphone. Vous serez dirigé vers une page sur netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Sélectionnez *Créer un dossier* pour ouvrir un ticket auprès d'un spécialiste du support NetApp :</block>
+  <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*Service* : Sélectionnez le service auquel le problème est associé. Par exemple, *NetApp Console* lorsqu'il s'agit d'un problème d’assistance technique lié aux flux de travail ou à la fonctionnalité de la Console.</block>
+  <block id="987df7518e2afb50a860647c832afd13" category="list-text">*Système* : Si applicable au stockage, sélectionnez *Cloud Volumes ONTAP* ou *On-Prem*, puis l’environnement de travail associé.</block>
+  <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">La liste des systèmes relève de la portée de l'organisation Console et de l'agent Console que vous avez sélectionné dans la bannière supérieure.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Priorité du dossier* : Choisissez la priorité du dossier, qui peut être Faible, Moyenne, Élevée ou Critique.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Pour en savoir plus sur ces priorités, passez votre souris sur l'icône d'information située à côté du nom du champ.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Description du problème* : Veuillez fournir une description détaillée de votre problème, y compris tous les messages d’erreur applicables ou les étapes de dépannage que vous avez effectuées.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Adresses électroniques supplémentaires* : Saisissez des adresses électroniques supplémentaires si vous souhaitez informer une autre personne de ce problème.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultative)* : Téléversez jusqu’à cinq pièces jointes, une à la fois.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">La taille des pièces jointes est limitée à 25 Mo par fichier. Les extensions de fichiers suivantes sont prises en charge : txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx et csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Capture d'écran du formulaire « Créer un cas » qui vous permet de créer un cas auprès du support NetApp.</block>
+  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Après avoir terminé</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle affichera votre numéro de dossier de support. Un spécialiste du support NetApp examinera votre dossier et vous recontactera prochainement.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Pour consulter l'historique de vos dossiers de support, vous pouvez sélectionner *Paramètres &gt; Chronologie* et rechercher les actions nommées « create support case ». Un bouton situé à l'extrême droite vous permet de développer l'action pour afficher les détails.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lorsque vous essayez de créer un dossier :</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier de support pour le service sélectionné »</block>
+  <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">Cette erreur peut indiquer que le compte NSS et l'entreprise à laquelle il est associé ne correspondent pas à l'entreprise de référence pour le numéro de série du compte NetApp Console (c.-à-d. 960xxxx) ou au numéro de série de l'environnement de travail. Vous pouvez obtenir de l'aide en utilisant l'une des options suivantes :</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Soumettez un cas non technique à<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">Gérez vos demandes d'assistance</block>
+  <block id="316508a3483178100806a9d44b49aba2" category="paragraph">Vous pouvez consulter et gérer les demandes d'assistance actives et résolues directement depuis la Console. Vous pouvez gérer les demandes associées à votre compte NSS et à votre entreprise.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Remarque :</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Le tableau de bord de gestion des dossiers de support, situé en haut de la page, propose deux affichages :</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">La vue de gauche affiche le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte utilisateur NSS que vous avez fourni.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise, en fonction de votre compte utilisateur NSS.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Les résultats dans le tableau reflètent les cas liés à la vue que vous avez sélectionnée.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes qui vous intéressent et vous pouvez filtrer le contenu de colonnes telles que Priorité et Statut. D'autres colonnes offrent uniquement des capacités de tri.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Consultez les étapes ci-dessous pour plus de détails.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Pour chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de clôturer un dossier qui n'est pas déjà en statut Closed ou Pending Closed.</block>
+  <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">Dans la NetApp Console, sélectionnez *Aide &gt; Assistance*.</block>
+  <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">Sélectionnez *Gestion des cas* et, si vous y êtes invité, ajoutez votre compte NSS à la Console.</block>
+  <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">La page *Gestion des cas* affiche les cas ouverts liés au compte NSS associé à votre compte utilisateur Console. Il s'agit du même compte NSS qui apparaît en haut de la page *Gestion NSS*.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations affichées dans le tableau :</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Sous *Dossiers de l'organisation*, sélectionnez *Afficher* pour consulter tous les dossiers associés à votre entreprise.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une période différente.</block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrez le contenu des colonnes.</block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">L'icône plus qui apparaît dans le tableau</block>
+  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">Modifiez les colonnes affichées dans le tableau en sélectionnant <block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block> puis en choisissant les colonnes que vous souhaitez afficher.</block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Une icône à trois points qui apparaît dans la dernière colonne du tableau</block>
+  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">Gérez un dossier existant en sélectionnant <block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block> l'une des options disponibles :</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir le dossier* : Affichez tous les détails d’un dossier spécifique.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mise à jour des notes de cas* : Fournissez des détails supplémentaires sur votre problème ou sélectionnez *Télécharger des fichiers* pour joindre jusqu’à un maximum de cinq fichiers.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Clôturer le dossier* : Fournissez des détails sur les raisons pour lesquelles vous clôturez le dossier et sélectionnez *Clôturer le dossier*.</block>
+  <block id="05becc6908f11b950a10c1285ad8e610" category="summary">Apprenez à définir et à gérer vos propres règles architecturales afin de faire respecter les normes organisationnelles ainsi que les meilleures pratiques de NetApp.</block>
+  <block id="4bd4792ab17b2dfaf1c72610c348727b" category="doc">Découvrez les règles personnalisées</block>
+  <block id="b01cf57846bbc28ff99c21c4bc5bf95e" category="paragraph">Les règles personnalisées vous permettent de définir, de vérifier et d'appliquer vos propres normes d'architecture, ainsi que les meilleures pratiques de NetApp, dans le tableau de bord Well-architected.</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">Aperçu</block>
+  <block id="1bf27748c4595ac68f24c9ca81ac41bf" category="paragraph">Le générateur de règles vous permet de créer des règles personnalisées basées sur les meilleures pratiques, en utilisant un langage simple. Ces règles sont vérifiées sur l'ensemble de vos ressources.</block>
+  <block id="a14942c110e79e05bc4f2c080b767a9b" category="paragraph">Les règles personnalisées vous aident à faire respecter les normes, les limites de risque et les exigences opérationnelles de votre organisation—des éléments que les règles génériques des fournisseurs ne couvrent pas toujours entièrement.</block>
+  <block id="2d5a2d8915799663f0b12f296909b0d7" category="section-title">Comment fonctionnent les règles personnalisées</block>
+  <block id="d269a3644b7db5fd4dd7893dafcb7c46" category="paragraph">Les règles personnalisées utilisent un processus guidé par l'IA qui transforme vos instructions en langage clair en règles structurées. L'IA agit comme traducteur et vérificateur. Elle suggère une règle, explique comment elle a compris votre demande et demande votre approbation avant que la règle ne soit enregistrée ou planifiée.</block>
+  <block id="2798be4150461330610447e77c4b94bc" category="paragraph">Ce processus garantit que :</block>
+  <block id="878df2e7c1f458ab6c7a2aa10a79a91d" category="list-text">La logique des règles est clairement définie et vérifiée pour détecter les erreurs</block>
+  <block id="2de539a5ac80425a29aa3efc4546d6bd" category="list-text">Aucun code libre n'est exécuté</block>
+  <block id="a279bdea3d93ab7f5ebfed278530b951" category="list-text">Vous pouvez voir exactement ce qui sera évalué avant d'approuver la règle</block>
+  <block id="aa5bf59269969e22f1e91f0116790d69" category="paragraph">Avant de pouvoir créer et exécuter des règles personnalisées, assurez-vous de disposer des éléments suivants :</block>
+  <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="list-text">Identifiants AWS</block>
+  <block id="287ae8bc216279a75c04344894e04b7f" category="inline-link-macro">Ajouter les informations d'identification AWS à Workload Factory</block>
+  <block id="5eb43201405d6bbeac74bcd01d61e2e1" category="list-text">Accès en lecture seule à votre environnement AWS. Les règles personnalisées nécessitent des autorisations en lecture seule comme limite de sécurité. <block ref="1db25aada4bff8233b24c1d7b39230cd" category="inline-link-macro-rx"></block>.</block>
+  <block id="823a6e1d7fe661be55dd3af05f972b11" category="list-text">Identifiants ONTAP</block>
+  <block id="04c426fb5f8d53f66e745f5d734630b8" category="list-text">Utilisateur de visualisation FSx avec autorisations en lecture seule. Workload Factory crée automatiquement cet utilisateur avec les autorisations requises.</block>
+  <block id="04d1424a4b58f665f6537d166f4f9750" category="list-text">Lien ou agent</block>
+  <block id="b68341d527b58582cc7cb537c3230cd8" category="inline-link-macro">Connectez-vous à un système de fichiers FSx for ONTAP à l'aide d'un lien</block>
+  <block id="107d37bd55f8a2cfafec7c7fddaafe0d" category="list-text">Nécessaire pour la connectivité aux systèmes de fichiers FSx lors de l'évaluation des règles. <block ref="4c7cc50e5133efc728aaa88011208eda" category="inline-link-macro-rx"></block>.</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Limitations</block>
+  <block id="1c3732fbe04e93a2e86e149b248e9fd0" category="paragraph">Les limitations suivantes s'appliquent aux règles personnalisées :</block>
+  <block id="f49daa2f924ab7cc9649449db3950201" category="list-text">Les corrections automatiques ne sont pas disponibles. Vous devez corriger vous-même les ressources non conformes en suivant les instructions fournies.</block>
+  <block id="7c7854f0cd9e8cf85ade395e732f419d" category="list-text">Chaque règle ne peut vérifier qu'un seul type de ressource. Pour vérifier plusieurs types de ressources, créez des règles distinctes.</block>
+  <block id="a2dac8d044c9463b44de62bfef46ffc3" category="list-text">L'intervalle d'évaluation le plus court est d'une heure afin d'éviter une analyse excessive.</block>
+  <block id="fa79d87dc9bd4ce86b2fe88eb0b009f8" category="list-text">Les règles ont un accès en lecture seule et ne peuvent pas modifier votre environnement.</block>
+  <block id="da7a7207ece80c733dd995304be2e71b" category="section-title">Modèle de définition de règles</block>
+  <block id="bac8c4aaf2611263b9e58729fcd77b06" category="paragraph">Chaque règle personnalisée se compose des éléments suivants :</block>
+  <block id="a4257b70dd090b12a16890a8df21a097" category="list-text">Nom de la règle</block>
+  <block id="c183586d821a9b142dd656b18e6abd05" category="list-text">Un nom défini par l'utilisateur pour la règle.</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="list-text">Description</block>
+  <block id="33d8c05440f61966e844b1f1f9bdfdbc" category="list-text">Votre justification de l'importance de cette règle pour votre organisation.</block>
+  <block id="53a002434dc37d0a5f8e2aac58da6296" category="list-text">Type de ressource</block>
+  <block id="34b13a905e7f65d5c27af25f75b92e1a" category="list-text">Ressource FSx à évaluer (système de fichiers, volume ou cache). Actuellement, un seul type de ressource par règle.</block>
+  <block id="ffaac1794c6af94dc7e1b21a4c194523" category="list-text">Planificateur</block>
+  <block id="7689948dd9ffc86e8e4279d74f40440a" category="list-text">Fréquence d'évaluation de la règle (minimum 1 heure, par défaut 24 heures).</block>
+  <block id="eef94a037f518dee839a80817e6c370d" category="list-text">Logique conditionnelle</block>
+  <block id="3ec042014c07c06e08f1132a2736a67b" category="list-text">Les critères spécifiques à vérifier.</block>
+  <block id="69971bc4f2fcec5885c890771737ab96" category="list-text">Étendue de l'évaluation</block>
+  <block id="f9352c661007f5c20648b8667e3e2c2e" category="list-text">Quelles ressources sont évaluées (toutes les ressources applicables dans le périmètre).</block>
+  <block id="383f1fcec1ec1cc242da70cbe9e75353" category="list-text">Logique de remédiation</block>
+  <block id="fa89a084a4db5e99f8289cf816f86093" category="list-text">Guide manuel pour la gestion des ressources non conformes.</block>
+  <block id="3414a9edc41238183f8bcc3192e49adf" category="section-title">Cycle de vie des règles</block>
+  <block id="990ef24c1b7e8a2bf1d9ad948d75e88c" category="paragraph">Les règles personnalisées progressent à travers les états suivants :</block>
+  <block id="f03ab16cd58372c77ba45a3d9a5a1cb9" category="list-text">Brouillon</block>
+  <block id="7edfa45546f16ea439072c85ed022ded" category="list-text">Une règle est en cours de création. Aucune évaluation n’a lieu.</block>
+  <block id="a42abfa6ff4f9bd0c4d682a01cec4455" category="list-text">Essai à blanc</block>
+  <block id="df76323d34c18ca92f80a38fd9da8d33" category="list-text">Évaluation ponctuelle permettant de prévisualiser les ressources qui seraient affectées. Utilisée pour la validation avant la planification.</block>
+  <block id="9c039c6e29eb59991bbe3702d2de1aed" category="list-text">Programmé (Activé)</block>
+  <block id="12401e69cfee8012efd57dfa07ccda49" category="list-text">La règle est active et s'exécute selon la planification définie.</block>
+  <block id="b9f5c797ebbf55adccdd8539a65a0241" category="list-text">Désactivées</block>
+  <block id="9bfd2521cfb729dd925cf45079242073" category="list-text">La règle est suspendue mais non supprimée. Peut être réactivée.</block>
+  <block id="5fe6005bf6e415c950c011fb65f12b8f" category="list-text">Supprimé</block>
+  <block id="82ec5f7cc11035152c40e48c55c05b0d" category="list-text">La règle est définitivement supprimée.</block>
+  <block id="2090e30be5c37fb6b5aa40aa26a83dea" category="section-title">Exemples de règles personnalisées</block>
+  <block id="d272586227e521ec436cb6d107bc72ba" category="paragraph">Les exemples suivants illustrent les règles personnalisées courantes :</block>
+  <block id="ee7f53b205e43e7a5017510113ca16f8" category="list-text">*Protection du volume de production*</block>
+  <block id="31ba253c12166670e96f9fc69476b594" category="list-text">« Tous les volumes portant l’étiquette ‘Prod’ doivent avoir une stratégie de snapshot installée »</block>
+  <block id="6136cd3669246561542587bb4d5eac4c" category="paragraph">Cette règle crée automatiquement des instantanés pour protéger les volumes de production conformément aux exigences de l'entreprise.</block>
+  <block id="d806e9e618419f7699287ac2bf68844c" category="list-text">*Hiérarchisation des volumes d’archives*</block>
+  <block id="654b13cdd2897fd4260df3602f80ebbf" category="list-text">"Tous les volumes portant l'étiquette 'Archive' doivent avoir une politique de hiérarchisation définie sur 'All'"</block>
+  <block id="3756e2c2d7cd023d9845fbb763b174a9" category="paragraph">Cette règle permet de réduire les coûts en déplaçant automatiquement les données archivées vers un stockage moins coûteux.</block>
+  <block id="e3ea153fbcf2ab9a530ac273d13d87b1" category="list-text">*Normes de dénomination des systèmes de fichiers*</block>
+  <block id="269acf14c942e18c7f92dabf12bccaf5" category="list-text">"Tous les systèmes de fichiers doivent respecter la convention d'appellation 'fsx-{environment}-{application}'"</block>
+  <block id="bf0fa31d0a55270b5b0783d82f5a26b2" category="paragraph">Cette règle garantit que les systèmes de fichiers respectent les conventions d'appellation de l'organisation pour faciliter la gestion et la répartition des coûts.</block>
+  <block id="385442535e80145b437f6d2ceb94114a" category="paragraph"><block ref="385442535e80145b437f6d2ceb94114a" category="inline-link-macro-rx"></block></block>
+  <block id="a4784024022566249b6075c39668b7f8" category="summary">NetApp Console analyse les configurations système en termes de fiabilité, de sécurité, d’excellence opérationnelle, d’optimisation des coûts et d’efficacité des performances, et fournit des informations et des recommandations pour vous aider à atteindre l’excellence opérationnelle.</block>
+  <block id="353f1c67bf11f23b2da8c213a9bc70b5" category="doc">Découvrez le tableau de bord bien conçu dans la NetApp Console</block>
+  <block id="d9883d0278babbc95871a912a1228569" category="paragraph">NetApp Console vous aide à maintenir et à exploiter des configurations fiables, sécurisées, efficaces et économiques, conformes aux architectures bien conçues pour le type de stockage que vous utilisez. Le tableau de bord bien conçu offre une vue unifiée des comptes et des régions, aide les équipes à identifier et à prioriser les risques, et prend en charge des règles personnalisées pour des besoins spécifiques. Des analyses quotidiennes automatiques de la configuration de votre système de stockage fournissent des informations et des recommandations pour vous aider à optimiser vos environnements de stockage.</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">Comment ça marche</block>
+  <block id="23913ac3e47be1b171c63a74cbea17c5" category="paragraph">NetApp Console analyse quotidiennement vos configurations. L’analyse fournit un état bien architecturé, des informations et des recommandations.</block>
+  <block id="f8c2962ffd59539175098d9cec464e88" category="paragraph">Une fois l'analyse quotidienne terminée, les configurations apparaissent comme « optimisées » ou « non optimisées » dans le tableau de bord well-architected du déploiement. Vous trouverez le score d'optimisation total, les problèmes de configuration par catégorie, ainsi qu'une liste des problèmes de configuration et des recommandations. Vous pouvez consulter les recommandations pour les problèmes de configuration. Certains problèmes peuvent être résolus automatiquement par NetApp Console, tandis que d'autres nécessitent une intervention manuelle. Dans ce cas, NetApp Console fournit des instructions détaillées pour vous aider à mettre en œuvre les modifications recommandées.</block>
+  <block id="9dcaa39bfda1d173aaf4d2947a1719c9" category="paragraph">Vous pouvez ignorer l’analyse des configurations qui ne s’appliquent pas à vos environnements. Cela évite les alertes inutiles et les résultats d’optimisation inexacts. Lorsque vous ignorez une analyse de configuration spécifique, NetApp Console n’inclut pas la configuration dans le score d’optimisation total.</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">Pourquoi c'est important</block>
+  <block id="48f442280f0cb7e5f8aeb7e9e64bab0a" category="paragraph">La NetApp Console applique les meilleures pratiques aux environnements de stockage, de bases de données et VMware de grande envergure en combinant une évaluation continue avec des recommandations et des corrections. Les correctifs automatisés appliqués dans la NetApp Console réduisent les erreurs humaines, garantissent une gestion uniforme et préservent les performances et la fiabilité de vos infrastructures système.</block>
+  <block id="edfe108640fece93c135374c05152399" category="section-title">Systèmes de stockage pris en charge</block>
+  <block id="d2009269a39f66ebd14d1e37d03d192c" category="paragraph">Les systèmes de stockage suivants sont pris en charge dans le tableau de bord bien conçu de la NetApp Console :</block>
+  <block id="6c7de0adb95b1316c9bfad5feb9f2a84" category="section-title">Commencez à utiliser la NetApp Console pour détecter et corriger les erreurs de configuration système</block>
+  <block id="efa0436d4285f6b978deea924bca974d" category="paragraph">Pour commencer à utiliser NetApp Console, inscrivez-vous, ajoutez vos identifiants et établissez une connexion pour gérer vos ressources et optimiser les configurations système.</block>
+  <block id="8e868a8ae9b76f3b18202d7661a1fc8d" category="inline-link-macro">Flux de travail de démarrage pour NetApp Console (application SaaS)</block>
+  <block id="c9dd1068fa4fc1aa0a5049f7197d867f" category="paragraph"><block ref="c9dd1068fa4fc1aa0a5049f7197d867f" category="inline-link-macro-rx"></block></block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">Informations connexes</block>
+  <block id="8fed534b92837766d0beda280a6179f0" category="inline-link-macro">Mettre en œuvre des systèmes de fichiers FSx for ONTAP bien architecturés</block>
+  <block id="747200eb770e6839fabc7c5e94bb8f46" category="list-text"><block ref="747200eb770e6839fabc7c5e94bb8f46" category="inline-link-macro-rx"></block></block>
+  <block id="5a32235f2b218db1b6ee28d78cee531e" category="inline-link-macro">Implémentez des systèmes Cloud Volumes ONTAP bien architecturés</block>
+  <block id="ff47b1594ec49cf562b3bf00fbe07cad" category="list-text"><block ref="ff47b1594ec49cf562b3bf00fbe07cad" category="inline-link-macro-rx"></block></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de droits d'auteur, aux marques de commerce, aux brevets et plus encore.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques déposées</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, le logo NETAPP et les marques figurant sur la page NetApp Trademarks sont des marques de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques de leurs propriétaires respectifs.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevets</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Une liste actuelle des brevets détenus par NetApp peut être trouvée à :</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans les logiciels NetApp.</block>
+  <block id="2f7453885ba13ef684e6cd780fb74164" category="summary">Consultez, activez, désactivez et supprimez les règles architecturales personnalisées du catalogue de règles.</block>
+  <block id="0a7f0abf34857702447ced5ee72899a5" category="paragraph">Le catalogue des règles centralise la gestion de toutes vos règles personnalisées. Vous pouvez consulter les détails de chaque règle, vérifier ses résultats et l'activer ou la désactiver.</block>
+  <block id="d8bb2214730133a5475bf68bf933cdeb" category="section-title">Consultez le catalogue des règles</block>
+  <block id="12dc6c12cd959eea202fab9d01a2ef04" category="paragraph">Le catalogue des règles affiche toutes les règles que vous avez créées, leur statut, leur planification et leurs derniers résultats.</block>
+  <block id="dd5177b4ae0935729bdc02652d8232ff" category="list-text">Sélectionnez le menu <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block> puis sélectionnez *Générateur de règles*.</block>
+  <block id="2dbbd81185e2ce12dca0c0137a343a42" category="list-text">Cliquez sur *Afficher vos règles* pour ouvrir le catalogue des règles.</block>
+  <block id="5890f83979745a0ed0d6d680fbcc1638" category="section-title">Afficher les résultats de la règle</block>
+  <block id="eeed19c5f7da7509abad8a01045710dc" category="paragraph">Les résultats indiquent quelles ressources respectent votre règle et lesquelles ne la respectent pas.</block>
+  <block id="9e2e4a6d40890d391147ee63c83e4ebf" category="list-text">Dans le catalogue des règles, cliquez sur la règle que vous souhaitez consulter.</block>
+  <block id="2d6751ce25ede21d2492997ddca98b45" category="list-text">Sélectionnez l’onglet *Résultats de toutes les exécutions*.</block>
+  <block id="f4e2484ce7f636995f87d4460bb472cf" category="list-text">Sélectionnez **Afficher les détails** pour voir les résultats de chaque exécution.</block>
+  <block id="1e1d7fe345b85c5ca8f56429f339869c" category="paragraph">Si la vérification a échoué pour certains éléments, consultez le message d'erreur pour en connaître la raison. Les causes fréquentes sont des problèmes de connexion, des autorisations manquantes ou un Link/Connector qui n'a pas été configuré.</block>
+  <block id="8c5fb02c595607ff2d6a7bffe64be464" category="section-title">Suspendre une règle</block>
+  <block id="ad91e5fff3b8c62296713afbb3628a85" category="paragraph">Suspendre une règle permet d'interrompre son évaluation sans la supprimer. Les règles suspendues restent dans le catalogue et peuvent être réactivées à tout moment.</block>
+  <block id="6128c344ce68ca2256885ace5b47ff93" category="list-text">Dans le catalogue des règles, cliquez sur la règle que vous souhaitez suspendre.</block>
+  <block id="082d380473aced66fdfe341c99cda5a8" category="list-text">Pour suspendre une règle planifiée, cliquez sur *Pause*, puis confirmez. La règle cesse de s'exécuter selon sa planification.</block>
+  <block id="45967b1be5307f4c7a1110294cadcd04" category="list-text">Pour reprendre une règle suspendue, cliquez sur *Reprendre*, puis confirmez. La règle reprend ses évaluations régulières.</block>
+  <block id="505e9a4d5d793341b92e51caeffa198f" category="section-title">Supprimer une règle personnalisée</block>
+  <block id="106aa9d3af8dd9fe811548be7c0ab934" category="paragraph">Supprimez définitivement une règle lorsque vous n'en avez plus besoin. Cette action ne peut pas être annulée.</block>
+  <block id="0aec4bb39ad4e484e24dc1510d9772d1" category="list-text">Dans le catalogue des règles, cliquez sur la règle que vous souhaitez supprimer.</block>
+  <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">Cliquez sur *Delete*.</block>
+  <block id="a611c28af3d155e736c074bd926dc51b" category="list-text">Confirmez que vous souhaitez supprimer définitivement la règle.</block>
+  <block id="f36dd1b2731552458a4d8983a8bec074" category="paragraph">La règle est retirée du catalogue. Tout l'historique des évaluations est supprimé.</block>
+  <block id="ee46de54fef48d3ea00b2c8fc06cb58b" category="section-title">Effectuez un test rapide</block>
+  <block id="bd472ca28321d77d062059272b456804" category="paragraph">Effectuez un test rapide à tout moment pour vérifier la conformité actuelle sans attendre la prochaine exécution planifiée.</block>
+  <block id="5edd65680f750fa6f32b6e445f24fd27" category="list-text">Dans le catalogue des règles, cliquez sur la règle que vous souhaitez évaluer.</block>
+  <block id="ae7b417afa23cb538530e43e4b08cfff" category="list-text">Cliquez sur *Valider*.</block>
+  <block id="b4b7ad5dbb1a5d746e0ac8936e3f4798" category="paragraph">Le système évalue toutes les ressources concernées par rapport à la logique de la règle.</block>
+  <block id="5cb57852939f164731c4f61fcca33dac" category="list-text">Consultez les résultats pour connaître l'état actuel de la conformité.</block>
+  <block id="2cc894218e78a9699920859cc698e5d7" category="paragraph">Les tests sont audités et figurent dans l'historique d'évaluation de la règle.</block>
+  <block id="3d3e89f1bbb9f2c8f8d5468d18a725ec" category="section-title">Comprendre l'état d'exécution</block>
+  <block id="6e65a771efc9492475fe8b5aa7f1f7a1" category="paragraph">L'état d'exécution indique si une règle a été exécutée avec succès.</block>
+  <block id="30ae8fff8898dc197acd49d9c0797d20" category="list-text">Réussi</block>
+  <block id="10d8136bef0db24840b317cf2cf9d542" category="list-text">Toutes les ressources pertinentes ont été vérifiées et aucune erreur n'a été trouvée.</block>
+  <block id="bb74643cf41a9f5f9875f1477c085385" category="list-text">Réussite partielle</block>
+  <block id="36f74efd2e347d1422c804a6b796dee1" category="list-text">Certaines ressources ont été vérifiées avec succès, mais d'autres ont échoué. Consultez les détails des erreurs pour celles qui n'ont pas pu être vérifiées.</block>
+  <block id="d7c8c85bf79bbe1b7188497c32c3b0ca" category="list-text">Échec</block>
+  <block id="729ff93b396b672d12011be075fa41c4" category="list-text">L'évaluation n'a pas pu être menée à terme. Les causes fréquentes incluent des erreurs d'identifiant AWS, des problèmes de connexion réseau ou des problèmes d'autorisation ONTAP.</block>
+  <block id="78c94c654440e39e298ee7b003ea0c22" category="paragraph">Si une règle échoue systématiquement ou ne réussit que partiellement, vérifiez que :</block>
+  <block id="aa6ee29156e1ff679f21f8af41a72ab7" category="list-text">Les identifiants AWS offrent un accès en lecture seule à toutes les ressources.</block>
+  <block id="82ffeaea6f26c09775db3df15338abf4" category="list-text">Le lien et le connecteur sont configurés pour tous les systèmes de fichiers concernés.</block>
+  <block id="83391d1cdfce4d8cbed45dc698dedc6e" category="list-text">L'utilisateur du visualiseur FSx pour ONTAP dispose des autorisations appropriées.</block>
+  <block id="cc04bd1e4cca8a5b4e87672f588bf490" category="paragraph"><block ref="cc04bd1e4cca8a5b4e87672f588bf490" category="inline-link-macro-rx"></block></block>
+  <block id="df3d826b639dd614f0fae940d9ebee78" category="summary">Avant de pouvoir ouvrir un ticket d’assistance auprès du support technique NetApp, vous devez ajouter un compte NetApp Support Site à la NetApp Console, puis vous inscrire pour bénéficier du support.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Inscrivez-vous pour obtenir de l'aide</block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">L'inscription au support est requise pour bénéficier d'une assistance technique spécifique à la NetApp Console, à ses solutions de stockage et à ses services de données. L'inscription au support est également requise pour activer les flux de travail essentiels pour les systèmes Cloud Volumes ONTAP.</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">L’inscription au support ne permet pas d’activer le support NetApp pour un service de fichiers de fournisseur de cloud. Pour obtenir une assistance technique concernant un service de fichiers de fournisseur de cloud, son infrastructure ou toute solution utilisant ce service, consultez la section « Obtenir de l’aide » dans la documentation de ce produit.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Aperçu de l'inscription au support</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Il existe deux formes d'inscription pour activer le droit à l'assistance :</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">Enregistrement du numéro de série de votre compte NetApp Console (votre numéro de série à 20 chiffres 960xxxxxxxxx situé sur la page Ressources d’assistance dans la Console).</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">Cet identifiant d’abonnement de support unique s’applique à tout service au sein de la Console. Chaque compte Console doit être enregistré.</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Enregistrement des numéros de série Cloud Volumes ONTAP associés à un abonnement dans la place de marché de votre fournisseur de cloud (il s'agit de numéros de série à 20 chiffres 909201xxxxxxxx).</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">Ces numéros de série sont communément appelés _numéros de série PAYGO_ et sont générés par la NetApp Console lors du déploiement de Cloud Volumes ONTAP.</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">L'enregistrement des deux types de numéros de série permet d'activer des fonctionnalités telles que l'ouverture de tickets d'assistance et la génération automatique de dossiers. L'enregistrement s'effectue en ajoutant des comptes NetApp Support Site (NSS) à la Console, comme décrit ci-dessous.</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">Enregistrez la NetApp Console pour le support NetApp</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">Pour vous inscrire au support et activer votre droit au support, un utilisateur de votre compte NetApp Console doit associer un compte NetApp Support Site à son identifiant Console. La façon dont vous vous inscrivez au support NetApp dépend du fait que vous disposiez déjà ou non d’un compte NetApp Support Site (NSS).</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant possédant un compte NSS</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">Si vous êtes un NetApp client disposant d'un compte NSS, il vous suffit de vous inscrire pour bénéficier de l'assistance via la Console.</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">Sélectionnez *Administration* &gt; *Identifiants*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Sélectionnez *User Credentials*.</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">Sélectionnez *Ajouter des identifiants NSS* et suivez l’invite d’authentification du site de support NetApp (NSS).</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, sélectionnez l'icône Aide, puis *Support*.</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">La page *Ressources* doit indiquer que votre compte Console est enregistré pour l’assistance.</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">Veuillez noter que les autres utilisateurs de la Console ne verront pas ce même statut d'inscription au support s'ils n'ont pas associé un compte NetApp Support Site à leur identifiant. Cependant, cela ne signifie pas que votre compte n'est pas enregistré pour le support. Tant qu'un utilisateur de l'organisation a suivi ces étapes, votre compte a été enregistré.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Client existant mais sans compte NSS</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">Si vous êtes un client NetApp existant disposant de licences et de numéros de série existants mais _pas_ de compte NSS, vous devez créer un compte NSS et l’associer à votre identifiant de Console.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site Formulaire d'inscription utilisateur</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Créez un compte NetApp Support Site en remplissant le<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Veillez à sélectionner le niveau d'utilisateur approprié, qui est généralement *NetApp Customer/End User*.</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">Veuillez copier le numéro de série du compte Console (960xxxx) utilisé ci-dessus dans le champ du numéro de série. Cela accélérera le traitement du compte.</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">Associez votre nouveau compte NSS à votre identifiant de Console en effectuant les étapes sous <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Nouveau chez NetApp</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si vous êtes novice chez NetApp et que vous n'avez pas de compte NSS, suivez chaque étape ci-dessous.</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">Dans le coin supérieur droit de la Console, sélectionnez l'icône Aide, puis *Support*.</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Localisez le numéro de série de votre identifiant de compte sur la page Support Registration.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Capture d'écran du menu Aide où Support est la première option affichée</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support de NetApp</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Accédez à <block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> et sélectionnez *Je ne suis pas un client NetApp enregistré*.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Remplissez les champs obligatoires (ceux avec des astérisques rouges).</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">Dans le champ *Gamme de produits*, sélectionnez *Cloud Manager* puis sélectionnez votre fournisseur de facturation.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte de l’étape 2 ci-dessus, effectuez le contrôle de sécurité, puis confirmez que vous avez lu la politique mondiale de confidentialité des données de NetApp.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Un courriel est immédiatement envoyé à la boîte de réception fournie afin de finaliser cette transaction sécurisée. Assurez-vous de vérifier vos dossiers de courriers indésirables si le courriel de validation n'arrive pas dans quelques minutes.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Confirmez l'action depuis l'e-mail.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">La confirmation soumet votre demande à NetApp et vous recommande de créer un compte sur le site d'assistance NetApp.</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">Veillez à bien reporter le numéro de série du compte (960xxxx) utilisé ci-dessus dans le champ « Numéro de série ». Cela accélérera le traitement.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp devrait vous contacter au cours de ce processus. Il s'agit d'une procédure d'intégration unique pour les nouveaux utilisateurs.</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">Une fois que vous avez votre compte NetApp Support Site, associez le compte à votre connexion Console en suivant les étapes sous <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Associer les identifiants NSS pour la prise en charge de Cloud Volumes ONTAP</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">L'association des identifiants du site de support NetApp à votre compte Console est requise pour activer les flux de travail clés suivants pour Cloud Volumes ONTAP :</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">Enregistrement des systèmes Cloud Volumes ONTAP à paiement à l'utilisation pour le support</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">La fourniture de votre compte NSS est requise pour activer le support de votre système et pour accéder aux ressources de support technique NetApp.</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">Déploiement de Cloud Volumes ONTAP lorsque vous apportez votre propre licence (BYOL)</block>
+  <block id="f3cd224f9506684fa3b5e2b89b2a566c" category="paragraph">Vous devez fournir votre compte NSS pour que la Console puisse charger votre clé de licence et activer l’abonnement pour la période que vous avez achetée. Cela inclut les mises à jour automatiques pour les renouvellements de période.</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Mise à niveau du logiciel Cloud Volumes ONTAP vers la dernière version</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">L'association des identifiants NSS à votre compte NetApp Console est différente de celle du compte NSS associé à une connexion utilisateur Console.</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">Ces identifiants NSS sont associés à votre ID de compte Console. Les utilisateurs appartenant à l'organisation Console peuvent accéder à ces identifiants depuis *Support &gt; Gestion NSS*.</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous disposez d'un compte client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si vous possédez un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés en même temps que des comptes clients.</block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Sélectionnez *NSS Management &gt; Add NSS Account*.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d'identité pour les services d'authentification spécifiques au support et aux licences.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, fournissez votre adresse e-mail enregistrée sur le site d’assistance NetApp ainsi que votre mot de passe pour effectuer le processus d’authentification.</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">Ces actions permettent à la NetApp Console d'utiliser votre compte NSS pour des opérations telles que le téléchargement de licences, la vérification des mises à niveau logicielles et les futurs enregistrements de support.</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Le compte NSS doit être un compte client (et non un compte invité ou temporaire). Vous pouvez avoir plusieurs comptes NSS de niveau client.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Un seul compte NSS peut exister s'il s'agit d'un compte partenaire. Si vous tentez d'ajouter des comptes NSS clients alors qu'un compte partenaire existe déjà, le message d'erreur suivant s'affichera :</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">« Le type de client NSS n'est pas autorisé pour ce compte car il existe déjà des utilisateurs NSS d'un autre type. »</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Il en va de même si vous possédez déjà des comptes NSS au niveau client et que vous essayez d'ajouter un compte au niveau partenaire.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Une fois la connexion réussie, NetApp enregistrera le nom d'utilisateur NSS.</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Une icône composée de trois points horizontaux</block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Il s'agit d'un identifiant généré par le système et associé à votre adresse e-mail. Sur la page *Gestion NSS*, vous pouvez consulter votre adresse e-mail depuis le <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Si vous devez actualiser vos identifiant tokens de connexion, il existe également une option *Mettre à jour les identifiants* dans le menu <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Cette option vous invite à vous reconnecter. Veuillez noter que le jeton de ces comptes expire après 90 jours. Une notification sera publiée pour vous en avertir.</block>
+  <block id="ac750267020c9b3c0e32de825d9b57fc" category="doc">20 juillet 2026</block>
+  <block id="55cd06443095efee4eabc129ca3081e4" category="paragraph">Lien permanent : whats-new.html Mots-clés : nouveautés, fonctionnalités, nouveau, notes de version, améliorations, correctifs, nouvelles fonctionnalités, well-architected, tableau de bord well-architected, amazon fsx for netapp ontap, fsx for ontap, cloud volumes ontap Résumé : « Découvrez les nouveautés du tableau de bord well-architected dans NetApp Console. » --- = Nouveautés du tableau de bord Well-Architected dans NetApp Console :icons: font :imagesdir: ./media/</block>
+  <block id="b718f3585030c0abec042a5bbf6d2e9f" category="paragraph">Découvrez les nouveautés du composant Well-architected de Workload Factory.</block>
+  <block id="ada3d9e6c32ad89515ed748b05fc1156" category="paragraph">Découvrez les nouveautés du tableau de bord Well-Architected dans NetApp Console.</block>
+  <block id="c7c52ad889fc325f79c9eb4c7bf5f790" category="sidebar">NetApp Console vous aide à maintenir des configurations de stockage fiables, sécurisées, efficaces et économiques, conformes à l'architecture bien conçue de votre type de stockage. Le tableau de bord bien conçu offre une vue unifiée des comptes et des régions, aide les équipes à identifier et à prioriser les risques, et prend en charge les règles personnalisées pour des besoins spécifiques.</block>
+  <block id="d415d2282c2358533fbf25eb96870b80" category="sidebar">Tableau de bord bien conçu dans la NetApp Console</block>
+  <block id="2a627ffd986ce157fe857e61c818665a" category="sidebar">NetApp Console vous aide à maintenir et à exploiter des configurations fiables, sécurisées, efficaces et économiques, conformes aux architectures bien conçues pour le type de stockage que vous utilisez.</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencer</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de version</block>
+  <block id="d33632de78682fa0bdaa856a10d698bd" category="sidebar">Découvrez le tableau de bord bien architecturé</block>
+  <block id="266400b78b962e862b3a51e6d63a9eb0" category="sidebar">Produits pris en charge</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
+  <block id="aea6f0ef12adc0bf375c9cb3eaf5ecb7" category="sidebar">Élaborez vos propres règles</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
+  <block id="b19bb0439c5d62764cdbd2b118e3f054" category="sidebar">Analyse de configuration</block>
+  <block id="9123b467a31fc6f9863d4a33d8a6badc" category="sidebar">Améliorez les configurations du système de fichiers</block>
+  <block id="461c5d5f90a73ed3aa1f4d477121a6cb" category="sidebar">Améliorez les configurations système</block>
+</blocks>

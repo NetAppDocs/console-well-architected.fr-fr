@@ -1,0 +1,139 @@
+---
+sidebar: sidebar 
+permalink: fsx/improve-configurations-fsx.html 
+keywords: improve configurations, optimize configurations, implement best practices, well-architected file system, Amazon FSx for NetApp ONTAP, FSx for ONTAP 
+summary: 'Workload factory analyse les configurations Amazon FSx for NetApp ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l"excellence opérationnelle.' 
+---
+= Implémentez des configurations de système de fichiers Amazon FSx for NetApp ONTAP bien architecturées
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Directive non résolue dans <stdin> - include::https://raw.githubusercontent.com/NetAppDocs/workload-fsx-ontap/main/_include/improve-configurations-fsx.adoc[]
+
+
+
+[[before-you-begin]]
+== Avant de commencer
+
+* Vous devez link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["accorder les autorisations d'_opérations et de remédiation_"^] dans votre compte AWS.
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Connectez-vous à un système de fichiers FSx for ONTAP à l'aide d'un lien"]pour l’analyse la plus complète de vos ressources de système de fichiers.
+
+
+
+
+[[fix-a-configuration-issue]]
+== Résoudre un problème de configuration
+
+Vous pouvez corriger les problèmes de configuration d'un système de fichiers Amazon FSx for NetApp ONTAP ou de volumes sélectionnés au sein d'un système de fichiers. Vous pouvez sélectionner une ou plusieurs configurations à corriger.
+
+Le processus de correction peut entraîner des indisponibilités d'instance ou des interruptions de service. Examinez attentivement chaque recommandation avant de corriger un problème de configuration.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Well-architected*.
+. Sélectionnez *Afficher les problèmes* pour toute configuration. Assurez-vous de lire attentivement la recommandation.
++
+Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.
+
+. Sélectionnez *Corriger*.
++
+Lorsque l’option *Afficher et corriger* est disponible, sélectionnez les volumes concernés à corriger.
+
+. Consultez le résumé et les actions à entreprendre qui s'affichent dans la boîte de dialogue pour savoir ce qui se passe lorsque vous résolvez le problème. Certaines opérations peuvent entraîner des indisponibilités de l'instance ou des interruptions de service.
+. Sélectionnez *Continuer* pour résoudre le problème de configuration.
+
+
+.Résultat
+Workload Factory lance le processus de résolution du problème. Sélectionnez le menu des paramètres du compte, puis *Tracker* pour consulter l'état de l'opération.
+
+
+
+[[dismiss-a-configuration-analysis]]
+== Rejeter une analyse de configuration
+
+Interrompez l'analyse de configuration pour un système de fichiers Amazon FSx for NetApp ONTAP ou pour des volumes sélectionnés. Vous pouvez relancer l'analyse si nécessaire.
+
+[role="tabbed-block"]
+====
+.Rejeter une analyse de configuration pour un système de fichiers
+--
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Well-architected*.
+. Sélectionnez *Afficher les problèmes* pour toute configuration. Assurez-vous de lire attentivement la recommandation.
++
+Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.
+
+. Dans la section Configurations, identifiez la configuration qui ne s'applique pas à votre environnement et sélectionnez ensuite *Ignorer*.
+. Dans la boîte de dialogue de configuration « Ignorer », sélectionnez *Ignorer* pour arrêter l’analyse de configuration.
+
+
+--
+.Rejeter une analyse de configuration pour un volume
+--
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Well-architected*.
+. Sous Configurations, identifiez la configuration à ignorer pour les volumes sélectionnés, puis sélectionnez *View and fix*.
+. Identifiez les volumes à exclure de l'analyse de configuration.
++
+** Pour un seul volume : sélectionnez le menu Actions, puis sélectionnez *Ignorer le volume*.
+** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Ignorer* à côté de Bulk action.
+
+
+. Sélectionnez *Ignorer* pour interrompre l'analyse de la configuration.
+. Dans la boîte de dialogue Ignorer les volumes, sélectionnez *Ignorer* pour confirmer.
+
+
+--
+====
+.Résultat
+L'analyse de configuration s'arrête pour le système de fichiers ou les volumes sélectionnés.
+
+Vous pouvez réactiver l'analyse à tout moment.
+
+
+
+[[reactivate-a-dismissed-configuration-analysis]]
+== Réactiver une analyse de configuration rejetée
+
+Réactivez à tout moment une analyse de configuration annulée. Vous pouvez sélectionner une ou plusieurs configurations à réactiver.
+
+[role="tabbed-block"]
+====
+.Réactiver une analyse de configuration pour un système de fichiers
+--
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Well-architected*.
+. Sélectionnez *Configurations rejetées*.
+. Identifiez la configuration que vous souhaitez réactiver et sélectionnez *Réactiver*.
+
+
+--
+.Réactiver une analyse de configuration pour un volume
+--
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Well-architected*.
+. Sélectionnez *Configurations rejetées*.
+. Identifiez le(s) volume(s) à réactiver à partir de l'analyse de configuration.
++
+** Pour un volume : sélectionnez le menu Actions, puis sélectionnez *Réactiver le volume*.
+** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Réactiver* à côté de Bulk action.
+
+
+
+
+--
+====
+.Résultat
+Le système réactive l'analyse de configuration. Une nouvelle analyse a lieu chaque jour.

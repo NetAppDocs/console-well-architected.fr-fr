@@ -1,0 +1,122 @@
+---
+sidebar: sidebar 
+permalink: manage-custom-rules.html 
+keywords: manage custom rules, disable rules, delete rules, rule catalog, byor 
+summary: Consultez, activez, désactivez et supprimez les règles architecturales personnalisées du catalogue de règles. 
+---
+= Gérer les règles personnalisées
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le catalogue des règles centralise la gestion de toutes vos règles personnalisées. Vous pouvez consulter les détails de chaque règle, vérifier ses résultats et l'activer ou la désactiver.
+
+
+
+[[view-the-rules-catalog]]
+== Consultez le catalogue des règles
+
+Le catalogue des règles affiche toutes les règles que vous avez créées, leur statut, leur planification et leurs derniers résultats.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences sur console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger"] puis sélectionnez *Générateur de règles*.
+. Cliquez sur *Afficher vos règles* pour ouvrir le catalogue des règles.
+
+
+
+
+[[view-rule-results]]
+== Afficher les résultats de la règle
+
+Les résultats indiquent quelles ressources respectent votre règle et lesquelles ne la respectent pas.
+
+.Étapes
+. Dans le catalogue des règles, cliquez sur la règle que vous souhaitez consulter.
+. Sélectionnez l’onglet *Résultats de toutes les exécutions*.
+. Sélectionnez **Afficher les détails** pour voir les résultats de chaque exécution.
+
+
+Si la vérification a échoué pour certains éléments, consultez le message d'erreur pour en connaître la raison. Les causes fréquentes sont des problèmes de connexion, des autorisations manquantes ou un Link/Connector qui n'a pas été configuré.
+
+
+
+[[pause-a-rule]]
+== Suspendre une règle
+
+Suspendre une règle permet d'interrompre son évaluation sans la supprimer. Les règles suspendues restent dans le catalogue et peuvent être réactivées à tout moment.
+
+.Étapes
+. Dans le catalogue des règles, cliquez sur la règle que vous souhaitez suspendre.
+. Effectuez l'une des opérations suivantes :
++
+** Pour suspendre une règle planifiée, cliquez sur *Pause*, puis confirmez. La règle cesse de s'exécuter selon sa planification.
+** Pour reprendre une règle suspendue, cliquez sur *Reprendre*, puis confirmez. La règle reprend ses évaluations régulières.
+
+
+
+
+
+
+[[delete-a-custom-rule]]
+== Supprimer une règle personnalisée
+
+Supprimez définitivement une règle lorsque vous n'en avez plus besoin. Cette action ne peut pas être annulée.
+
+.Étapes
+. Dans le catalogue des règles, cliquez sur la règle que vous souhaitez supprimer.
+. Cliquez sur *Delete*.
+. Confirmez que vous souhaitez supprimer définitivement la règle.
+
+
+.Résultat
+La règle est retirée du catalogue. Tout l'historique des évaluations est supprimé.
+
+
+
+[[run-a-quick-test]]
+== Effectuez un test rapide
+
+Effectuez un test rapide à tout moment pour vérifier la conformité actuelle sans attendre la prochaine exécution planifiée.
+
+.Étapes
+. Dans le catalogue des règles, cliquez sur la règle que vous souhaitez évaluer.
+. Cliquez sur *Valider*.
++
+Le système évalue toutes les ressources concernées par rapport à la logique de la règle.
+
+. Consultez les résultats pour connaître l'état actuel de la conformité.
+
+
+Les tests sont audités et figurent dans l'historique d'évaluation de la règle.
+
+
+
+[[understand-execution-status]]
+== Comprendre l'état d'exécution
+
+L'état d'exécution indique si une règle a été exécutée avec succès.
+
+Réussi:: Toutes les ressources pertinentes ont été vérifiées et aucune erreur n'a été trouvée.
+Réussite partielle:: Certaines ressources ont été vérifiées avec succès, mais d'autres ont échoué. Consultez les détails des erreurs pour celles qui n'ont pas pu être vérifiées.
+Échec:: L'évaluation n'a pas pu être menée à terme. Les causes fréquentes incluent des erreurs d'identifiant AWS, des problèmes de connexion réseau ou des problèmes d'autorisation ONTAP.
+
+
+Si une règle échoue systématiquement ou ne réussit que partiellement, vérifiez que :
+
+* Les identifiants AWS offrent un accès en lecture seule à toutes les ressources.
+* Le lien et le connecteur sont configurés pour tous les systèmes de fichiers concernés.
+* L'utilisateur du visualiseur FSx pour ONTAP dispose des autorisations appropriées.
+
+
+
+
+[[what-to-do-next]]
+== Que faire ensuite
+
+link:learn-custom-rules.html["En savoir plus sur les règles personnalisées"]

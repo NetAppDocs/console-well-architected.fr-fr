@@ -1,0 +1,27 @@
+= Présentation du tableau de bord bien conçu dans NetApp Console
+:allow-uri-read: 
+
+
+
+
+[[introducing-the-well-architected-dashboard-in-netapp-console]]
+=== Présentation du tableau de bord bien conçu dans NetApp Console
+
+Le tableau de bord bien architecturé dans la NetApp Console offre une vue unique de vos systèmes de stockage et de leurs configurations, tous comptes et régions confondus. Le tableau de bord fournit des informations et des recommandations pour vous aider à atteindre l'excellence opérationnelle. Vous pouvez consulter l'état bien architecturé de vos configurations, les problèmes de configuration organisés selon les piliers du cadre bien architecturé pour le type de stockage que vous utilisez, ainsi qu'une liste des problèmes de configuration et des recommandations.
+
+Apprenez-en davantage sur le link:https://docs.netapp.com/us-en/console-well-architected/learn-well-architected-dashboard.html["tableau de bord bien conçu"].
+
+Le tableau de bord bien conçu dans la Console est disponible pour les systèmes de stockage suivants :
+
+* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
+* link:https://docs.netapp.com/us-en/console-well-architected/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
+
+
+
+
+[[build-your-own-custom-rules]]
+=== Créez vos propres règles personnalisées
+
+Rédigez des règles personnalisées en langage clair pour garantir que vos systèmes respectent les normes de votre organisation et les bonnes pratiques NetApp. Testez les règles avec une exécution à blanc, puis planifiez leur exécution dans vos environnements.
+
+https://docs.netapp.com/us-en/workload-well-architected/learn-custom-rules.html["En savoir plus sur les règles personnalisées"^]
