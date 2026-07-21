@@ -24,4 +24,4 @@ Le tableau de bord bien conçu dans la Console est disponible pour les systèmes
 
 Rédigez des règles personnalisées en langage clair pour garantir que vos systèmes respectent les normes de votre organisation et les bonnes pratiques NetApp. Testez les règles avec une exécution à blanc, puis planifiez leur exécution dans vos environnements.
 
-https://docs.netapp.com/us-en/workload-well-architected/learn-custom-rules.html["En savoir plus sur les règles personnalisées"^]
+https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["En savoir plus sur les règles personnalisées"]

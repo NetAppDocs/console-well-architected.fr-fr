@@ -1,16 +1,17 @@
 ---
 indexpage:
   title: Tableau de bord bien conçu dans la NetApp Console
-  summary: NetApp Console vous aide à maintenir et à exploiter des configurations
-    fiables, sécurisées, efficaces et économiques, conformes aux architectures bien
-    conçues pour le type de stockage que vous utilisez.
+  summary: Le tableau de bord bien conçu dans la NetApp Console vous aide à maintenir
+    et à exploiter des configurations fiables, sécurisées, efficaces et économiques,
+    conformes aux cadres bien conçus pour le type de stockage que vous utilisez.
   keywords: amazon, fsx, cloud volumes ontap, microsoft azure, netapp, ontap, well-architected
     framework, NetApp Console
-  lead: NetApp Console vous aide à maintenir des configurations de stockage fiables,
-    sécurisées, efficaces et économiques, conformes à l'architecture bien conçue de
-    votre type de stockage. Le tableau de bord bien conçu offre une vue unifiée des
-    comptes et des régions, aide les équipes à identifier et à prioriser les risques,
-    et prend en charge les règles personnalisées pour des besoins spécifiques.
+  lead: Le tableau de bord optimisé dans la NetApp Console vous aide à maintenir des
+    configurations de stockage fiables, sécurisées, efficaces et économiques, conformes
+    au cadre d'architecture optimal de votre type de stockage. Le tableau de bord
+    optimisé offre une vue unifiée des comptes et des régions, aide les équipes à
+    identifier et à prioriser les risques, et prend en charge les règles personnalisées
+    pour des besoins spécifiques.
   tiles:
   - title: Commencer
     links:

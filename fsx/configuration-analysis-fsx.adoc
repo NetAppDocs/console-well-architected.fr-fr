@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: fsx/configuration-analysis-fsx.html 
 keywords: configuration issues, issues, improve, analyze, storage configuration, recommendation, recommendations 
-summary: 'NetApp Console analyse régulièrement les configurations du système de stockage afin de déterminer s"il existe des problèmes de configuration.' 
+summary: 'Le tableau de bord bien conçu analyse régulièrement les configurations du système de fichiers FSx for ONTAP afin de déterminer s"il existe des problèmes de configuration.' 
 ---
 = Analyse de configuration pour Amazon FSx for NetApp ONTAP
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'NetApp Console analyse régulièrement les configurations du système 
 
 
 [role="lead"]
-NetApp Console analyse régulièrement les configurations des systèmes de stockage afin de déterminer s'il existe des problèmes de configuration. Lorsque des problèmes sont détectés, NetApp Console vous indique quels sont les problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une efficacité des coûts et la conformité aux meilleures pratiques.
+Le tableau de bord bien conçu dans la NetApp Console analyse régulièrement les configurations du système de stockage afin de déterminer s'il existe des problèmes de configuration avec vos systèmes de fichiers Amazon FSx for NetApp ONTAP. Lorsque des problèmes sont détectés, le tableau de bord vous indique quels sont ces problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une efficacité des coûts et la conformité aux bonnes pratiques.
 
 Principales fonctionnalités :
 
@@ -23,30 +23,12 @@ Principales fonctionnalités :
 
 
 
-[[how-it-works]]
-== Comment ça marche
-
-Workload Factory analyse vos charges de travail exécutées sur les déploiements de systèmes de fichiers Amazon FSx for NetApp ONTAP quotidiennement. L’analyse fournit un état bien architecturé, des informations et des recommandations.
-
-Une fois l'analyse quotidienne terminée, les configurations apparaissent comme « optimisées » ou « non optimisées » dans le tableau de bord Well-architected du déploiement. Vous trouverez le score d'optimisation total, les problèmes de configuration par catégorie, ainsi qu'une liste des problèmes de configuration et des recommandations. Vous pouvez consulter les recommandations pour les problèmes de configuration. Certains problèmes peuvent être résolus automatiquement par Workload Factory, tandis que d'autres nécessitent une intervention manuelle. Dans ce cas, Workload Factory fournit des instructions détaillées pour vous aider à mettre en œuvre les modifications recommandées.
-
-Vous pouvez ignorer l’analyse des configurations qui ne s’appliquent pas à vos environnements. Cela évite les alertes inutiles et les résultats d’optimisation inexacts. Lorsque vous ignorez une analyse de configuration spécifique, Workload Factory n'inclut pas la configuration dans le score d'optimisation total.
-
-
-
-[[why-it-matters]]
-== Pourquoi c'est important
-
-Workload Factory applique les meilleures pratiques aux environnements de stockage, de base de données et VMware de grande envergure en combinant une évaluation continue avec des recommandations et des corrections. Les correctifs automatisés appliqués dans la console Workload Factory réduisent les erreurs humaines, garantissent une gestion uniforme et préservent les performances et la fiabilité de vos infrastructures de charges de travail.
-
-
-
 [[analysis-requirements]]
 == Exigences d'analyse
 
 Pour une analyse complète du système de fichiers, vous devez procéder comme suit :
 
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html#agent-console-deploy["Déployer un agent NetApp Console"^] ou link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["associer un lien"^]. L’agent de la console et la connectivité des liens permettent à la NetApp Console d’analyser toutes les configurations du système de fichiers, telles que la protection des données et les performances.
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html#agent-console-deploy["Déployer un agent NetApp Console"^] ou link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["associer un lien"^] pour établir une connectivité entre le système de fichiers et NetApp Console.
 * Accordez les autorisations de _visualisation, de planification et d'analyse_ dans votre compte AWS.
 +
 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment accorder des autorisations à un compte AWS"^]
@@ -58,7 +40,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["D�
 [[best-practices-and-recommendations-for-storage-workloads]]
 == Meilleures pratiques et recommandations pour les charges de travail de stockage
 
-Workload Factory évalue les configurations de stockage par rapport aux meilleures pratiques ONTAP et au cadre AWS Well-Architected. L'évaluation recommande également des améliorations et des corrections.
+Le tableau de bord bien architecturé évalue les configurations de stockage par rapport aux bonnes pratiques ONTAP et au cadre AWS Well-Architected. L’évaluation recommande également des améliorations et des corrections.
 
 L'analyse bien conçue catégorise les configurations selon les piliers suivants du cadre : _fiabilité_, _sécurité_, _excellence opérationnelle_, _optimisation des coûts_ et _efficacité des performances_.
 
@@ -79,15 +61,15 @@ Planifiez des instantanés locaux pour une sauvegarde efficace et une restaurati
 
 * *Réplication interrégionale*
 +
-La réplication interrégionale garantit que vos données sont répliquées vers une autre région AWS, offrant une durabilité et une disponibilité des données accrues. Workload Factory recommande de configurer la réplication interrégionale pour aider à la reprise après sinistre et à la conformité.
+La réplication interrégionale garantit la réplication de vos données vers une autre région AWS, assurant ainsi une durabilité et une disponibilité accrues. Configurez la réplication interrégionale pour prendre en charge la reprise après sinistre et la conformité.
 
 * *Configurer la réplication des données*
 +
-Pour renforcer la fiabilité des données, celles-ci peuvent être répliquées sur un système de fichiers FSx for ONTAP situé dans la même région ou dans une autre région. Configurez la réplication des données pour prendre en charge la migration, la reprise après sinistre et la conservation à long terme entre systèmes de fichiers.
+Pour renforcer la fiabilité des données, répliquez-les sur un système de fichiers FSx for ONTAP situé dans la même région ou dans une autre région. Configurez la réplication des données pour prendre en charge la migration, la reprise après sinistre et la conservation à long terme sur différents systèmes de fichiers.
 
 * *Augmenter le seuil de capacité SSD*
 +
-La capacité du niveau de stockage SSD ne doit pas dépasser 80 % d'utilisation. Cela pourrait impacter les lectures et écritures de données sur votre niveau de stockage de pool de capacité et affecter la capacité de débit de votre système de fichiers. En cas de manque de capacité, les volumes de données deviennent en lecture seule. Les services tentant d'écrire de nouvelles données échouent également.
+La capacité du niveau de stockage SSD ne doit pas dépasser 80 % d'utilisation. Cela pourrait impacter les lectures et écritures de données sur votre niveau de stockage pool de capacité et affecter la capacité de débit de votre système de fichiers. Lorsque la capacité est épuisée, les volumes de données deviennent en lecture seule. Les services tentant d'écrire de nouvelles données échouent également.
 
 * *Associez les étiquettes pour garantir la fiabilité des données*
 +
@@ -95,7 +77,7 @@ Les étiquettes de la stratégie d'instantané du volume source et les étiquett
 
 * *Augmenter le seuil de capacité des fichiers*
 +
-Il convient d'augmenter le seuil de capacité des fichiers afin d'éviter d'atteindre la limite de capacité du volume. Une capacité de fichiers insuffisante (en inodes) empêche l'écriture de données supplémentaires sur le volume. Workload Factory recommande de maintenir l'utilisation de la capacité des fichiers en dessous de 80 %. La capacité de fichiers disponible est nécessaire pour créer de nouveaux fichiers sur le volume.
+Il convient d'augmenter le seuil de capacité des fichiers afin d'éviter d'atteindre la limite de capacité du volume. Une capacité de fichiers insuffisante (en inodes) empêche l'écriture de données supplémentaires sur le volume. Workload Factory recommande de maintenir l'utilisation de la capacité des fichiers en dessous de 80% pour permettre la création de nouveaux fichiers.
 
 
 
@@ -129,7 +111,7 @@ La gestion de la capacité automatique doit être activée afin de garantir rég
 
 * *Seuil d'utilisation de la capacité de volume*
 +
-Workload Factory recommande que la capacité du volume n’excède pas 80 % d’utilisation de façon continue. Cela pourrait affecter les lectures et écritures de données de votre application. Les augmentations de capacité du volume peuvent être manuelles ou automatiques grâce à la fonction d’extension automatique du volume.
+Workload Factory recommande que la capacité du volume ne dépasse pas 80 % d'utilisation. Cela pourrait affecter les lectures et écritures de données de votre application. Les augmentations de capacité du volume peuvent être manuelles ou automatiques grâce à la fonction d'extension automatique du volume.
 
 * *Utilisation du volume presque saturé*
 +
@@ -158,7 +140,7 @@ L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre 
 
 * *Optimisez le TCO en hiérarchisant les données froides*
 +
-Activez la hiérarchisation des données inactives pour réduire l'utilisation du stockage SSD. Workload Factory recommande d'appliquer une stratégie de hiérarchisation à chaque volume. FSx for ONTAP analyse les données en continu pour détecter les données inactives et les déplacer vers le niveau de stockage de capacité sans interruption.
+Activez la hiérarchisation des données inactives pour réduire l'utilisation du stockage SSD. Workload Factory recommande d'appliquer une stratégie de hiérarchisation à chaque volume. FSx for ONTAP analyse en continu les données à la recherche de données inactives et les déplace vers le niveau de pool de capacité sans interruption.
 
 * *Activer les efficacités de stockage*
 +
@@ -166,7 +148,7 @@ Activez les techniques d'efficacité du stockage — compactage, compression et 
 
 * *Suppression inutile de snapshots et de sauvegardes*
 +
-Les instantanés et les sauvegardes qui ne sont plus nécessaires doivent être supprimés pour réduire les coûts.
+Supprimez les instantanés et les sauvegardes qui ne sont plus nécessaires afin de réduire les coûts.
 
 * *Périphériques de blocs inactifs*
 +
@@ -174,7 +156,7 @@ Après qu’un périphérique de stockage par blocs n’est pas utilisé pendant
 
 * *Capacité SSD sous-utilisée*
 +
-Une capacité SSD sous-utilisée engendre des coûts inutiles. Workload Factory recommande de réduire la capacité de la couche SSD tout en maintenant une marge d'espace libre de 20 % au-dessus de la capacité actuellement utilisée. Une opération de réduction peut prendre de plusieurs heures à plusieurs jours, et le système ne prend pas en charge d'autres opérations sur le système de fichiers pendant cette période.
+Une capacité SSD sous-utilisée engendre des coûts inutiles. Workload Factory recommande de réduire la capacité de la couche SSD tout en maintenant une marge d'espace libre de 20 %. Une opération de diminution peut prendre de plusieurs heures à plusieurs jours, et les autres opérations sur le système de fichiers ne sont pas prises en charge pendant cette période.
 
 * *Volumes NAS inactifs*
 +

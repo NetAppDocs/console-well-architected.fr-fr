@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: cvo/improve-configurations-cvo.html 
 keywords: improve configurations, optimize configurations, implement best practices, well-architected file system, Cloud Volumes ONTAP, Microsoft Azure 
-summary: 'Workload factory analyse les configurations Cloud Volumes ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l"excellence opérationnelle.' 
+summary: 'Le tableau de bord bien architecturé analyse les configurations Cloud Volumes ONTAP et fournit des informations et des recommandations pour vous aider à atteindre l"excellence opérationnelle.' 
 ---
 = Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées
 :allow-uri-read: 
@@ -20,11 +20,11 @@ link:configuration-analysis-cvo.html["Découvrez l'analyse de configuration et l
 [[about-this-task]]
 == À propos de cette tâche
 
-NetApp analyse quotidiennement les déploiements de systèmes Cloud Volumes ONTAP dans Microsoft Azure. L'analyse quotidienne fournit un état bien architecturé, ainsi que des informations et des recommandations pour vous aider à résoudre les problèmes de configuration afin que vos systèmes respectent les meilleures pratiques.
+Le tableau de bord bien architecturé analyse quotidiennement les configurations de déploiement du système Cloud Volumes ONTAP sur Microsoft Azure. L'analyse quotidienne fournit l'état bien architecturé, des informations et des recommandations.
 
-Vous pouvez consulter les recommandations relatives aux problèmes de configuration de vos systèmes sans déployer d’agent Console ; toutefois, la connectivité avec l’agent Console permet à NetApp de fournir l’analyse la plus complète des ressources de votre système.
+La connectivité via l’agent Link ou Console permet au tableau de bord bien architecturé dans la NetApp Console d’effectuer une analyse complète de vos systèmes Cloud Volumes ONTAP afin de détecter les problèmes de performance, de protection des données et de configuration. Cela garantit que vous recevez des informations et des recommandations précises pour optimiser vos systèmes Cloud Volumes ONTAP.
 
-Une fois l'analyse quotidienne terminée, le tableau de bord affiche le nombre total de ressources bien architecturées, le nombre de ressources en état critique et le nombre de ressources en état d'alerte. Les configurations sont classées selon les piliers du cadre de bonnes pratiques d'architecture : fiabilité, excellence opérationnelle, optimisation des coûts, efficacité des performances et sécurité. Le tableau de bord comprend également un tableau répertoriant toutes les configurations, le statut de bonnes pratiques d'architecture de ces configurations, la gravité, la catégorie, le type de ressource (volume ou système), les ressources impactées et la possibilité d'afficher la recommandation lorsque la configuration n'est pas optimisée.
+Les exigences en matière de configuration de stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Cela vous permet d'éviter les alertes inutiles et les résultats d'optimisation inexacts.
 
 
 
