@@ -21,6 +21,8 @@ Principales fonctionnalités :
 * Des idées à l'action
 
 
+Directive non résolue dans <stdin> - include::well-architected-workloads.adoc[]
+
 
 
 [[analysis-requirements]]
@@ -44,13 +46,13 @@ L'analyse bien conçue catégorise les configurations selon les piliers suivants
 
 La fiabilité garantit que les charges de travail exécutent leurs fonctions prévues correctement et de manière constante, même en cas de perturbations.
 
-* *Planifiez des instantanés locaux*
+* *Politique d'instantané*
 +
 Planifiez des instantanés locaux pour une sauvegarde efficace et une restauration rapide. Les instantanés sont des images instantanées, à un moment donné, de vos volumes.
 
-* *Seuil de capacité SSD*
+* *Marge de capacité SSD*
 +
-La capacité de stockage SSD ne doit pas dépasser 80 % d'utilisation de façon continue. Le dépassement de ce seuil peut dégrader le débit, rendre les volumes de données en lecture seule et entraîner l'échec des opérations d'écriture.
+La capacité du niveau de stockage SSD ne doit pas dépasser 80 % d'utilisation. Cela pourrait impacter les lectures et écritures de données sur votre niveau de stockage pool de capacité et affecter la capacité de débit de votre système. Lorsque la capacité est épuisée, les volumes de données deviennent en lecture seule. Les services tentant d'écrire de nouvelles données échouent également.
 
 
 
@@ -74,17 +76,17 @@ NetApp Autonomous Ransomware Protection avec intelligence artificielle (ARP/AI) 
 
 L'excellence opérationnelle vise à fournir la meilleure architecture et la meilleure valeur commerciale.
 
-* *Seuil d'utilisation de la capacité de volume*
+* *Capacité maximale du volume*
 +
-NetApp recommande que la capacité du volume ne dépasse pas 80 % d'utilisation de façon continue. Cela pourrait avoir un impact sur les lectures et écritures de données de votre application. L'augmentation de la capacité du volume peut être manuelle ou automatique grâce à la fonction d'extension automatique du volume.
+Nous recommandons de ne pas dépasser 80 % d'utilisation de la capacité du volume. Cela pourrait impacter les opérations de lecture et d'écriture de données de votre application. L'augmentation de la capacité du volume peut être manuelle ou automatique grâce à la fonction d'extension automatique du volume.
 
-* *Mode d'écriture des relations de cache*
+* *FlexCache mode écriture*
 +
-Pour des performances optimales, NetApp recommande le mode d'écriture du cache le mieux adapté à votre charge de travail. Le mode « write-around » offre de meilleures performances pour les charges de travail intensives en lecture avec de petits fichiers, tandis que le mode « write-back » offre de meilleures performances pour les charges de travail intensives en écriture avec de gros fichiers.
+Pour des performances optimales, nous vous recommandons le mode d'écriture FlexCache le mieux adapté à votre charge de travail. Le mode « write-around » offre de meilleures performances pour les charges de travail à forte intensité de lecture avec des fichiers de petite taille, tandis que le mode « write-back » offre de meilleures performances pour les charges de travail à forte intensité d'écriture avec des fichiers volumineux.
 
-* *Taille du volume de cache ONTAP*
+* *FlexCache taille de la réplique*
 +
-NetApp recommande d’activer le dimensionnement automatique et le nettoyage sur les volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données fréquemment consultées (données chaudes) pour une efficacité maximale.
+Nous vous recommandons d’activer le dimensionnement automatique des volumes et le nettoyage des volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données fréquemment consultées (données chaudes) pour une efficacité maximale.
 
 * *Conformité de la version ONTAP*
 +
@@ -99,15 +101,15 @@ Mettez à niveau vers la dernière version d'ONTAP pour bénéficier d'une compa
 
 L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre entreprise tout en maintenant les coûts bas.
 
-* *Identifier la capacité SSD sous-utilisée*
+* *Capacité SSD surdimensionnée*
 +
-Une capacité SSD sous-utilisée peut engendrer des coûts inutiles. NetApp recommande de réduire la capacité de la couche SSD tout en maintenant une marge de 20 % d'espace libre au-dessus de la capacité actuellement utilisée. Une opération de diminution prend de plusieurs heures à plusieurs jours, et les autres opérations système ne sont pas prises en charge pendant cette période.
+Un surdimensionnement de la capacité SSD engendre des coûts inutiles. Nous recommandons de réduire la capacité de la couche SSD tout en conservant une marge d'espace libre de 20 %. Une opération de diminution peut prendre de plusieurs heures à plusieurs jours, et les autres opérations sur le système de fichiers ne sont pas prises en charge pendant cette période.
 
-* *Politique de hiérarchisation des données*
+* *Hiérarchisation des données froides*
 +
-Activez la hiérarchisation des données froides pour déplacer les données froides du niveau de stockage SSD vers un stockage moins coûteux. Azure Blob Storage sert de niveau de capacité pour les données inactives.
+Activez la hiérarchisation des données froides pour déplacer ces données du niveau de stockage SSD vers un stockage moins coûteux. Nous vous recommandons d'appliquer une stratégie de hiérarchisation à chaque volume. Azure Blob Storage sert de niveau de capacité pour les données inactives.
 
 
 
 .Et ensuite
-link:improve-configurations-cvo.html["Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées"]
+link:https://docs.netapp.com/us-en/console-well-architected/cvo/improve-configurations-cvo.html["Mettre en œuvre des configurations système Cloud Volumes ONTAP bien architecturées"]

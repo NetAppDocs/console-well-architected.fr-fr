@@ -26,6 +26,9 @@ Le générateur de règles vous permet de créer des règles personnalisées bas
 Les règles personnalisées vous aident à faire respecter les normes, les limites de risque et les exigences opérationnelles de votre organisation—des éléments que les règles génériques des fournisseurs ne couvrent pas toujours entièrement.
 
 
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, le générateur de règles ne sera pas disponible et vous ne pourrez pas créer de règles personnalisées. link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"^].
+
+
 
 [[how-custom-rules-work]]
 == Comment fonctionnent les règles personnalisées

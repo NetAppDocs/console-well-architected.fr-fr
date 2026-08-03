@@ -42,7 +42,7 @@ Les résultats indiquent quelles ressources respectent votre règle et lesquelle
 . Sélectionnez **Afficher les détails** pour voir les résultats de chaque exécution.
 
 
-Si la vérification a échoué pour certains éléments, consultez le message d'erreur pour en connaître la raison. Les causes fréquentes sont des problèmes de connexion, des autorisations manquantes ou un Link/Connector qui n'a pas été configuré.
+Si la vérification a échoué pour certains éléments, consultez le message d'erreur pour en connaître la raison. Les causes fréquentes sont des problèmes de connexion, des autorisations manquantes ou un lien non configuré.
 
 
 
@@ -110,7 +110,7 @@ Réussite partielle:: Certaines ressources ont été vérifiées avec succès, m
 Si une règle échoue systématiquement ou ne réussit que partiellement, vérifiez que :
 
 * Les identifiants AWS offrent un accès en lecture seule à toutes les ressources.
-* Le lien et le connecteur sont configurés pour tous les systèmes de fichiers concernés.
+* Les agents Link et Console sont configurés pour tous les systèmes de fichiers concernés.
 * L'utilisateur du visualiseur FSx pour ONTAP dispose des autorisations appropriées.
 
 

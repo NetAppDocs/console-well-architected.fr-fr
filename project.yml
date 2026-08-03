@@ -13,10 +13,12 @@ settings:
   langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Commencer
+  - title: Notes de version
     entries:
     - title: Quoi de neuf
       url: "/whats-new.html"
+  - title: Commencer
+    entries:
     - title: Découvrez le tableau de bord bien architecturé
       url: "/learn-well-architected-dashboard.html"
   - title: Produits pris en charge

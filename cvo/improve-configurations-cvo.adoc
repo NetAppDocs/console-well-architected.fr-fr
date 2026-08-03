@@ -52,5 +52,111 @@ Vous pouvez également sélectionner image:button_download.png["Capture d'écran
 . Examinez la recommandation.
 
 
-.Et ensuite
-Corrigez les problèmes de configuration pour garantir des performances optimales de vos systèmes.
+
+
+[[fix-a-configuration-issue]]
+== Résoudre un problème de configuration
+
+Vous pouvez corriger les problèmes de configuration d'un système Cloud Volumes ONTAP ou de volumes sélectionnés dans un système de fichiers. Vous pouvez sélectionner une ou plusieurs configurations à corriger.
+
+Le processus de correction peut entraîner des indisponibilités d'instance ou des interruptions de service. Examinez attentivement chaque recommandation avant de corriger un problème de configuration.
+
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.
++
+Assurez-vous de lire attentivement la recommandation. Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.
+
+. Sélectionnez *Corriger*.
++
+Lorsque l’option *Afficher et corriger* est disponible, sélectionnez les volumes concernés à corriger.
+
+. Consultez le résumé et les actions à entreprendre qui s'affichent dans la boîte de dialogue pour savoir ce qui se passe lorsque vous résolvez le problème. Certaines opérations peuvent entraîner des indisponibilités de l'instance ou des interruptions de service.
+. Sélectionnez *Continuer* pour résoudre le problème de configuration.
+
+
+.Résultat
+Workload Factory lance le processus de résolution du problème. Sélectionnez le menu des paramètres du compte, puis *Tracker* pour consulter l'état de l'opération.
+
+
+
+[[dismiss-a-configuration-analysis]]
+== Rejeter une analyse de configuration
+
+Interrompez l'analyse de configuration d'un système Cloud Volumes ONTAP ou de volumes sélectionnés. Vous pouvez relancer l'analyse si nécessaire.
+
+[role="tabbed-block"]
+====
+.Rejeter une analyse de configuration pour un système de fichiers
+--
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.
+. Dans la section Configurations, identifiez la configuration qui ne s'applique pas à votre environnement et sélectionnez ensuite *Ignorer*.
+. Dans la boîte de dialogue de configuration « Ignorer », sélectionnez *Ignorer* pour arrêter l’analyse de configuration.
+
+
+--
+.Rejeter une analyse de configuration pour un volume
+--
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.
+. Sous Configurations, identifiez la configuration à ignorer pour les volumes sélectionnés, puis sélectionnez *View and fix*.
+. Identifiez les volumes à exclure de l'analyse de configuration.
++
+** Pour un seul volume : sélectionnez le menu Actions, puis sélectionnez *Ignorer le volume*.
+** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Ignorer* à côté de Bulk action.
+
+
+. Sélectionnez *Ignorer* pour interrompre l'analyse de la configuration.
+. Dans la boîte de dialogue Ignorer les volumes, sélectionnez *Ignorer* pour confirmer.
+
+
+--
+====
+.Résultat
+L'analyse de configuration s'arrête pour le système de fichiers ou les volumes sélectionnés.
+
+Vous pouvez réactiver l'analyse à tout moment.
+
+
+
+[[reactivate-a-dismissed-configuration-analysis]]
+== Réactiver une analyse de configuration rejetée
+
+Réactivez à tout moment une analyse de configuration rejetée pour un système Cloud Volumes ONTAP. Vous pouvez sélectionner une ou plusieurs configurations à réactiver.
+
+[role="tabbed-block"]
+====
+.Réactiver une analyse de configuration pour un système de fichiers
+--
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Sélectionnez *Configurations rejetées*.
+. Identifiez la configuration que vous souhaitez réactiver et sélectionnez *Réactiver*.
+
+
+--
+.Réactiver une analyse de configuration pour un volume
+--
+.Étapes
+. Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
+. Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
+. Sélectionnez *Configurations rejetées*.
+. Identifiez le(s) volume(s) à réactiver à partir de l'analyse de configuration.
++
+** Pour un volume : sélectionnez le menu Actions, puis sélectionnez *Réactiver le volume*.
+** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Réactiver* à côté de Bulk action.
+
+
+
+
+--
+====
+.Résultat
+Le système réactive l'analyse de configuration. Une nouvelle analyse a lieu chaque jour.
