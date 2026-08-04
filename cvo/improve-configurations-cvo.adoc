@@ -88,7 +88,7 @@ Interrompez l'analyse de configuration d'un système Cloud Volumes ONTAP ou de v
 
 [role="tabbed-block"]
 ====
-.Rejeter une analyse de configuration pour un système de fichiers
+.Rejeter une analyse de configuration pour un système
 --
 .Étapes
 . Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
@@ -119,7 +119,7 @@ Interrompez l'analyse de configuration d'un système Cloud Volumes ONTAP ou de v
 --
 ====
 .Résultat
-L'analyse de configuration s'arrête pour le système de fichiers ou les volumes sélectionnés.
+L'analyse de configuration s'arrête pour le système ou les volumes sélectionnés.
 
 Vous pouvez réactiver l'analyse à tout moment.
 
@@ -132,7 +132,7 @@ Réactivez à tout moment une analyse de configuration rejetée pour un système
 
 [role="tabbed-block"]
 ====
-.Réactiver une analyse de configuration pour un système de fichiers
+.Réactivez une analyse de configuration pour un système
 --
 .Étapes
 . Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
