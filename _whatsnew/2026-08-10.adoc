@@ -1,0 +1,12 @@
+= Prise en charge de Google Cloud NetApp Volumes dans le tableau de bord bien architecturé
+:allow-uri-read: 
+
+
+
+
+[[google-cloud-netapp-volumes-support-in-the-well-architected-dashboard]]
+=== Prise en charge de Google Cloud NetApp Volumes dans le tableau de bord bien architecturé
+
+Le tableau de bord de la NetApp Console prend désormais en charge Google Cloud NetApp Volumes. Les administrateurs de stockage peuvent consulter l’état de leurs pools de stockage et de leurs configurations, obtenir des recommandations pour améliorer l’efficacité, le coût, les performances, la fiabilité et la sécurité, et prendre des mesures pour optimiser les opérations et suivre les bonnes pratiques.
+
+En savoir plus sur link:https://docs.netapp.com/us-en/console-well-architected/gcnv/configuration-analysis-gcnv.html["Analyse de configuration pour Google Cloud NetApp Volumes"].
