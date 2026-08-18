@@ -25,15 +25,14 @@ Découvrez les nouveautés du tableau de bord bien conçu dans la NetApp Console
 
 Le tableau de bord bien conçu dans la NetApp Console est disponible pour Amazon FSx for NetApp ONTAP.
 
-* link:https://docs.netapp.com/us-en/console-well-architected/fsx/configuration-analysis-fsx.html["Découvrez l'analyse de configuration pour FSx for ONTAP"]
+link:https://docs.netapp.com/us-en/console-well-architected/fsx/configuration-analysis-fsx.html["Découvrez l'analyse de configuration pour FSx for ONTAP"]
 
 
 
+[[updated-configuration-names-in-the-well-architected-dashboard]]
+=== Noms de configuration mis à jour dans le tableau de bord bien architected
 
-[[updated-configuration-names-for-fsx-for-ontap-in-the-well-architected-dashboard]]
-=== Noms de configuration mis à jour pour FSx for ONTAP dans le tableau de bord bien architecturé
-
-Le tableau de bord bien conçu dans la NetApp Console inclut désormais de nouveaux noms de configuration de stockage pour FSx for ONTAP.
+Le tableau de bord bien conçu de NetApp Console inclut désormais de nouveaux noms de configuration de stockage.
 
 Le tableau suivant répertorie les anciens noms de configuration et leurs nouveaux noms de configuration correspondants dans le tableau de bord bien architecturé.
 
