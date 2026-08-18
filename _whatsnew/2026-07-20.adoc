@@ -11,11 +11,7 @@ Le tableau de bord bien architecturé dans la NetApp Console offre une vue uniqu
 
 Apprenez-en davantage sur le link:https://docs.netapp.com/us-en/console-well-architected/learn-well-architected-dashboard.html["tableau de bord bien conçu"].
 
-Le tableau de bord bien conçu dans la Console est disponible pour les systèmes de stockage suivants :
-
-* link:https://docs.netapp.com/us-en/console-well-architected/fsx/configuration-analysis-fsx.html["Amazon FSx for NetApp ONTAP"]
-* link:https://docs.netapp.com/us-en/console-well-architected/cvo/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure"]
-
+Le tableau de bord bien conçu de la Console est disponible pour link:https://docs.netapp.com/us-en/console-well-architected/cvo/configuration-analysis-cvo.html["Cloud Volumes ONTAP dans Microsoft Azure."]
 
 
 
