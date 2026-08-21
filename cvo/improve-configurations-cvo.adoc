@@ -33,6 +33,12 @@ Les exigences en matière de configuration de stockage varient. Vous pouvez igno
 
 * Vous devez link:https://console.netapp.com/add-working-environment/choose-type["ajouter un système Cloud Volumes ONTAP"] vous connecter à la NetApp Console pour consulter l'état de l'architecture et les recommandations concernant les problèmes de configuration.
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html["Vous devriez déployer un agent Console"] pour l’analyse la plus complète de vos ressources système.
+* Autorisez la connectivité réseau sortante vers les points de terminaison suivants :
++
+** \https://api.workloads.netapp.com
+** \https://ws.workloads.bluexp.netapp.com
+
+
 
 
 
