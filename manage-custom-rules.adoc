@@ -4,7 +4,7 @@ permalink: manage-custom-rules.html
 keywords: manage custom rules, disable rules, delete rules, rule catalog, byor 
 summary: Consultez, activez, désactivez et supprimez les règles architecturales personnalisées du catalogue de règles. 
 ---
-= Gérer les règles personnalisées
+= Gérez les règles personnalisées dans la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
