@@ -11,7 +11,7 @@ summary: 'NetApp Console analyse régulièrement la configuration des systèmes 
 
 
 [role="lead"]
-Le tableau de bord bien conçu dans la NetApp Console analyse régulièrement les configurations des systèmes de stockage afin de déterminer s'il existe des problèmes de configuration. Lorsque des problèmes sont détectés, le tableau de bord vous indique quels sont les problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une efficacité des coûts et la conformité aux bonnes pratiques.
+Workload Factory analyse régulièrement les configurations des systèmes de stockage afin de détecter d'éventuels problèmes. En cas de problème, le tableau de bord bien architecturé dans la NetApp Console affiche la nature de ces problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une rentabilité maximale et la conformité aux bonnes pratiques.
 
 Principales fonctionnalités :
 

@@ -11,7 +11,9 @@ summary: 'Le tableau de bord bien architecturé analyse les configurations Cloud
 
 
 [role="lead"]
-Grâce aux analyses de configuration et aux recommandations, exploitez NetApp pour mettre en œuvre les bonnes pratiques pour vos systèmes Cloud Volumes ONTAP exécutés sur le stockage Microsoft Azure. Vous pouvez facilement vérifier l'état de l'architecture, identifier les problèmes de configuration et obtenir des recommandations pour améliorer l'architecture des systèmes qui ne sont pas optimisés en termes de fiabilité, de sécurité, d'efficacité, de performance et de coût.
+NetApp vous aide à mettre en œuvre les meilleures pratiques pour vos systèmes Cloud Volumes ONTAP exécutés sur le stockage Microsoft Azure grâce à des analyses de configuration et des recommandations. Vous pouvez examiner l’état de l’architecture, identifier les problèmes liés à vos configurations et obtenir des recommandations pour améliorer l’architecture des systèmes qui ne sont pas optimisés pour la fiabilité, la sécurité, l’efficacité, la performance et le coût.
+
+Vous pouvez également ignorer l'analyse des configurations de stockage spécifiques qui ne s'appliquent pas à votre environnement de stockage afin d'éviter les alertes inutiles et des résultats d'optimisation inexacts.
 
 link:configuration-analysis-cvo.html["Découvrez l'analyse de configuration et l'état bien architecturé."]
 
@@ -20,11 +22,11 @@ link:configuration-analysis-cvo.html["Découvrez l'analyse de configuration et l
 [[about-this-task]]
 == À propos de cette tâche
 
-Le tableau de bord bien architecturé analyse quotidiennement les configurations de déploiement du système Cloud Volumes ONTAP sur Microsoft Azure. L'analyse quotidienne fournit l'état bien architecturé, des informations et des recommandations.
+Workload Factory analyse chaque jour les configurations système Cloud Volumes ONTAP sur Microsoft Azure. L’analyse quotidienne fournit l’état bien architecturé, des informations clés et des recommandations. Vous pouvez corriger automatiquement les problèmes de configuration afin de respecter les bonnes pratiques.
 
-La connectivité via l’agent Link ou Console permet au tableau de bord bien architecturé dans la NetApp Console d’effectuer une analyse complète de vos systèmes Cloud Volumes ONTAP afin de détecter les problèmes de performance, de protection des données et de configuration. Cela garantit que vous recevez des informations et des recommandations précises pour optimiser vos systèmes Cloud Volumes ONTAP.
+La connectivité via l'agent Link ou Console permet à NetApp Workload Factory d'effectuer une analyse complète de vos systèmes Cloud Volumes ONTAP afin de détecter les problèmes de performance, de protection des données et de configuration. Cela garantit que vous recevez des informations et des recommandations précises pour optimiser vos systèmes Cloud Volumes ONTAP.
 
-Les exigences en matière de configuration de stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Cela vous permet d'éviter les alertes inutiles et les résultats d'optimisation inexacts.
+Les exigences de configuration du stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Ignorer les configurations qui ne s'appliquent pas vous aide à éviter les alertes inutiles et des résultats d'optimisation inexacts.
 
 
 
@@ -74,10 +76,7 @@ Le processus de correction peut entraîner des indisponibilités d'instance ou d
 +
 Assurez-vous de lire attentivement la recommandation. Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.
 
-. Sélectionnez *Corriger*.
-+
-Lorsque l’option *Afficher et corriger* est disponible, sélectionnez les volumes concernés à corriger.
-
+. Sélectionnez *Réparer* pour un seul volume ou *Afficher et réparer* pour plusieurs volumes. Pour plusieurs volumes, sélectionnez les volumes concernés à réparer.
 . Consultez le résumé et les actions à entreprendre qui s'affichent dans la boîte de dialogue pour savoir ce qui se passe lorsque vous résolvez le problème. Certaines opérations peuvent entraîner des indisponibilités de l'instance ou des interruptions de service.
 . Sélectionnez *Continuer* pour résoudre le problème de configuration.
 

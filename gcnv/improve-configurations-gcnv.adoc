@@ -11,7 +11,7 @@ summary: 'Workload factory analyse les configurations Google Cloud NetApp Volume
 
 
 [role="lead"]
-Grâce aux analyses et recommandations de configuration, exploitez NetApp pour mettre en œuvre les meilleures pratiques pour vos pools de stockage Google Cloud NetApp Volumes exécutés sur Google Cloud Storage. Vous pouvez facilement vérifier l’état de l’architecture, identifier les problèmes de configuration et obtenir des recommandations pour améliorer l’architecture de tout pool de stockage qui n’est pas optimisé pour la fiabilité, la sécurité, les performances et le coût.
+NetApp vous aide à mettre en œuvre les meilleures pratiques pour vos pools de stockage Google Cloud NetApp Volumes grâce à des analyses de configuration et des recommandations. Vous pouvez consulter l'état de l'architecture, prendre connaissance des problèmes liés à vos configurations et obtenir des recommandations pour améliorer l'architecture de tout pool de stockage qui n'est pas optimisé pour la fiabilité, la sécurité, l'efficacité, la performance et le coût.
 
 link:configuration-analysis-gcnv.html["Découvrez l'analyse de configuration et l'état bien architecturé."]
 
@@ -20,9 +20,21 @@ link:configuration-analysis-gcnv.html["Découvrez l'analyse de configuration et 
 [[about-this-task]]
 == À propos de cette tâche
 
-NetApp analyse quotidiennement les déploiements de pools de stockage Google Cloud NetApp Volumes sur Google Cloud. L'analyse quotidienne fournit l'état bien architecturé, ainsi que des informations et des recommandations pour vous aider à comprendre les problèmes de configuration afin que vos pools de stockage respectent les bonnes pratiques.
+NetApp analyse chaque jour la configuration de vos pools de stockage Google Cloud NetApp Volumes. L'analyse quotidienne fournit l'état bien architecturé, ainsi que des informations et des recommandations pour vous aider à comprendre les problèmes de configuration afin que vos pools de stockage respectent les meilleures pratiques.
 
-Une fois l'analyse quotidienne terminée, le tableau de bord affiche le nombre total de ressources bien architecturées, le nombre de ressources en état critique et le nombre de ressources en état d'alerte. Les configurations sont classées selon les piliers du cadre bien architecturé : fiabilité, excellence opérationnelle, optimisation des coûts, efficacité des performances et sécurité. Le tableau de bord comprend également un tableau répertoriant toutes les configurations, le statut bien architecturé de ces configurations, la gravité, la catégorie, le type de ressource (volume ou pool de stockage), les ressources impactées et l'option permettant d'afficher la recommandation lorsque la configuration n'est pas optimisée.
+La connectivité de l’agent Link ou Console permet à Workload Factory d’effectuer une analyse complète de vos systèmes de fichiers afin de détecter les problèmes de performance, de protection des données et de configuration. Vous recevez ainsi des informations précises et des recommandations pour optimiser vos pools de stockage Google Cloud NetApp Volumes.
+
+Les exigences de configuration du stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Ignorer les configurations qui ne s'appliquent pas vous aide à éviter les alertes inutiles et des résultats d'optimisation inexacts.
+
+Une fois l'analyse quotidienne terminée, le tableau de bord « Bien architecturé » affiche le nombre total de ressources bien architecturées, le nombre de ressources en état critique et le nombre de ressources en état d'alerte. Les configurations sont classées selon les piliers du cadre « Bien architecturé » : fiabilité, excellence opérationnelle, optimisation des coûts, efficacité des performances et sécurité. Le tableau de bord comprend également un tableau répertoriant toutes les configurations. Pour chaque configuration, le tableau affiche :
+
+* Le statut bien architecturé
+* La gravité
+* La catégorie
+* Le type de ressource (volume ou pool de stockage)
+* Ressources concernées
+* L'option permettant d'afficher la recommandation lorsque la configuration n'est pas optimisée
+
 
 
 
@@ -44,7 +56,7 @@ Vous pouvez consulter les recommandations relatives aux problèmes de configurat
 . Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
 . Depuis le tableau de bord Well-architected, sélectionnez *Afficher* pour toute configuration.
 +
-Vous pouvez également sélectionner image:button_download.png["Capture d'écran de l'icône de téléchargement"]pour télécharger un fichier CSV des recommandations pour toutes les configurations.
+Vous pouvez également sélectionner image:button_download.png["Capture d'écran de l'icône de téléchargement"] pour télécharger un fichier CSV des recommandations pour toutes les configurations.
 
 . Examinez la recommandation.
 
@@ -118,7 +130,7 @@ Réactivez à tout moment une analyse de configuration annulée. Vous pouvez sé
 . Connectez-vous au link:https://console.netapp.com/home["NetApp Console"^].
 . Dans le menu NetApp Console, sélectionnez *Charges de travail* puis *Bien architecturé*.
 . Sélectionnez *Configurations rejetées*.
-. Identifiez le(s) volume(s) à réactiver à partir de l'analyse de configuration.
+. Identifiez les volumes à réactiver à partir de l'analyse de configuration.
 +
 ** Pour un volume : sélectionnez le menu Actions, puis sélectionnez *Réactiver le volume*.
 ** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Réactiver* à côté de Bulk action.

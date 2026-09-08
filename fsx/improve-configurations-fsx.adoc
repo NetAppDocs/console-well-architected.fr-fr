@@ -11,7 +11,7 @@ summary: 'Le tableau de bord bien architecturé analyse les configurations Amazo
 
 
 [role="lead"]
-Grâce aux analyses de configuration et aux recommandations, exploitez NetApp pour mettre en œuvre les meilleures pratiques pour vos systèmes de fichiers FSx for ONTAP. Vous pouvez facilement examiner l'état bien architecturé, découvrir les problèmes liés à vos configurations et prendre des mesures pour améliorer l'architecture de tout système qui n'est pas optimisé pour la fiabilité, la sécurité, l'efficacité, la performance et le coût.
+NetApp vous aide à mettre en œuvre les meilleures pratiques pour vos systèmes de fichiers FSx for ONTAP grâce à des analyses de configuration et à des recommandations. Vous pouvez examiner l’état bien architecturé, prendre connaissance des problèmes liés à vos configurations et obtenir des recommandations pour améliorer l’architecture des systèmes qui ne sont pas optimisés pour la fiabilité, la sécurité, l’efficacité, les performances et le coût.
 
 Vous pouvez également ignorer l'analyse des configurations de stockage spécifiques qui ne s'appliquent pas à votre environnement de stockage afin d'éviter les alertes inutiles et des résultats d'optimisation inexacts.
 
@@ -22,11 +22,11 @@ link:configuration-analysis-fsx.html["Découvrez l'analyse de configuration et l
 [[about-this-task]]
 == À propos de cette tâche
 
-Le tableau de bord bien architecturé analyse quotidiennement les configurations de déploiement du système de fichiers Amazon FSx for NetApp ONTAP. L'analyse quotidienne fournit l'état bien architecturé, des informations et des recommandations. Vous pouvez corriger automatiquement les problèmes de configuration afin de respecter les bonnes pratiques.
+Workload Factory analyse chaque jour les configurations de déploiement du système de fichiers Amazon FSx for NetApp ONTAP. L’analyse quotidienne fournit l’état bien architecturé, des informations clés et des recommandations. Vous pouvez corriger automatiquement les problèmes de configuration afin de respecter les bonnes pratiques.
 
-La connectivité via l’agent Link ou Console permet au tableau de bord bien architecturé dans la NetApp Console d’effectuer une analyse complète de vos systèmes de fichiers afin de détecter les problèmes de performance, de protection des données et de configuration. Cela garantit que vous recevez des informations et des recommandations précises pour optimiser vos systèmes de fichiers FSx for ONTAP.
+La connectivité via l'agent Link ou Console permet à Workload Factory d'effectuer une analyse complète de vos systèmes de fichiers afin de détecter les problèmes de performance, de protection des données et de configuration. Vous recevez ainsi des informations précises et des recommandations pour optimiser vos systèmes de fichiers FSx for ONTAP.
 
-Les exigences en matière de configuration de stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Cela vous permet d'éviter les alertes inutiles et les résultats d'optimisation inexacts.
+Les exigences de configuration du stockage varient. Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à votre environnement de stockage. Ignorer les configurations qui ne s'appliquent pas vous aide à éviter les alertes inutiles et des résultats d'optimisation inexacts.
 
 
 
@@ -34,7 +34,7 @@ Les exigences en matière de configuration de stockage varient. Vous pouvez igno
 == Avant de commencer
 
 * Vous devez link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["accorder les autorisations d'_opérations et de remédiation_"^] dans votre compte AWS.
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html["Installer un agent de Console"^] ou link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Connectez-vous à un système de fichiers FSx for ONTAP à l'aide d'un lien"] pour l'analyse la plus complète de vos ressources de système de fichiers.
+* Vous devez link:https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html["installer un agent de Console"^] ou link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["se connecter à un système de fichiers FSx for ONTAP à l'aide d'un lien"] pour obtenir l'analyse la plus complète possible de vos ressources de système de fichiers.
 
 
 
@@ -53,10 +53,7 @@ La résolution des problèmes de configuration peut entraîner des indisponibili
 +
 Assurez-vous de lire attentivement la recommandation. Cette recommandation explique les bonnes pratiques et les pièges potentiels des configurations non optimisées.
 
-. Sélectionnez *Corriger*.
-+
-Lorsque l’option *Afficher et corriger* est disponible, sélectionnez les volumes concernés à corriger.
-
+. Sélectionnez *Réparer* pour un seul volume ou *Afficher et réparer* pour plusieurs volumes. Si vous sélectionnez *Afficher et réparer*, sélectionnez les volumes concernés à réparer.
 . Consultez le résumé et les actions à entreprendre dans la boîte de dialogue pour savoir ce qui se passe si vous résolvez le problème. Certaines opérations peuvent entraîner des indisponibilités de l'instance ou des interruptions de service.
 . Sélectionnez *Continuer* pour résoudre le problème de configuration.
 
@@ -132,7 +129,7 @@ Réactivez à tout moment une analyse de configuration annulée. Vous pouvez sé
 . Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
 . Dans le menu Stockage, sélectionnez *Well-architected*.
 . Sélectionnez *Configurations rejetées*.
-. Identifiez le(s) volume(s) à réactiver à partir de l'analyse de configuration.
+. Identifiez les volumes à réactiver à partir de l'analyse de configuration.
 +
 ** Pour un volume : sélectionnez le menu Actions, puis sélectionnez *Réactiver le volume*.
 ** Pour plusieurs volumes : sélectionnez les volumes, puis sélectionnez *Réactiver* à côté de Bulk action.
