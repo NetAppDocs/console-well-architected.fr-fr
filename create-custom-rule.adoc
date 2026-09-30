@@ -85,7 +85,7 @@ L'IA pourrait vous proposer plusieurs options pour mieux comprendre vos besoins.
 [[test-the-rule]]
 == Tester la règle
 
-Avant de programmer la règle, exécutez un test unique pour voir quelles ressources elle affectera.
+Avant d'enregistrer ou de planifier la règle, effectuez un test pour voir quelles ressources elle affectera.
 
 .Étapes
 . Sélectionnez *Valider la règle*.
@@ -114,13 +114,13 @@ Le système évalue toutes les ressources concernées par rapport à votre logiq
 [[save-or-schedule-the-rule]]
 == Enregistrer ou planifier la règle
 
-Après avoir testé votre règle, vous pouvez l'enregistrer comme brouillon ou la configurer pour qu'elle s'exécute régulièrement.
+Une fois votre règle validée, vous pouvez l'enregistrer comme brouillon ou la configurer pour qu'elle s'exécute régulièrement.
 
 .Étapes
 . Effectuez l'une des opérations suivantes :
 +
 ** Pour programmer une évaluation régulière, définissez la fréquence d'évaluation (minimum 1 heure, par défaut 24 heures) et sélectionnez *Schedule*. La règle est activée et s'exécute selon la planification définie.
-** Pour enregistrer sans programmer, sélectionnez *Enregistrer comme brouillon*. La règle est enregistrée mais n'est évaluée que lorsque vous la programmez.
+** Pour enregistrer après validation sans planification, sélectionnez *Enregistrer comme brouillon*. La règle est enregistrée mais n’est pas évaluée tant que vous ne la planifiez pas.
 ** Pour supprimer la règle, sélectionnez *Discard* pour annuler la création de la règle et recommencer.
 
 

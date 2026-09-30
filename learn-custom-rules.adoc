@@ -78,6 +78,7 @@ Nom de la règle:: Un nom défini par l'utilisateur pour la règle.
 Description:: Votre justification de l'importance de cette règle pour votre organisation.
 Type de ressource:: Ressource FSx à évaluer (système de fichiers, volume ou cache). Actuellement, un seul type de ressource par règle.
 Planificateur:: Fréquence d'évaluation de la règle (minimum 1 heure, par défaut 24 heures).
+Gravité:: Le niveau d'importance de la règle, par exemple avertissement ou critique.
 Logique conditionnelle:: Les critères spécifiques à vérifier.
 Étendue de l'évaluation:: Quelles ressources sont évaluées (toutes les ressources applicables dans le périmètre).
 Logique de remédiation:: Guide manuel pour la gestion des ressources non conformes.
@@ -90,11 +91,13 @@ Logique de remédiation:: Guide manuel pour la gestion des ressources non confor
 
 Les règles personnalisées progressent à travers les états suivants :
 
-Brouillon:: Une règle est en cours de création. Aucune évaluation n’a lieu.
-Essai à blanc:: Évaluation ponctuelle permettant de prévisualiser les ressources qui seraient affectées. Utilisée pour la validation avant la planification.
-Programmé (Activé):: La règle est active et s'exécute selon la planification définie.
-Désactivées:: La règle est suspendue mais non supprimée. Peut être réactivée.
-Supprimé:: La règle est définitivement supprimée.
+En cours:: Création ou vérification des règles.
+Échec de la création:: Impossible de créer la règle.
+Brouillon:: Enregistré, mais pas encore planifié.
+Projet validé:: La validation a réussi et peut être enregistrée ou programmée.
+Programmé (Activé):: Actif et s'exécute selon le calendrier défini.
+Désactivées:: En pause, mais non supprimée. Peut être réactivée.
+Supprimé:: Supprimé définitivement.
 
 
 

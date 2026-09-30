@@ -11,7 +11,7 @@ summary: 'NetApp Console analyse régulièrement la configuration des systèmes 
 
 
 [role="lead"]
-Workload Factory analyse régulièrement les configurations des systèmes de stockage afin de détecter d'éventuels problèmes. En cas de problème, le tableau de bord bien architecturé dans la NetApp Console affiche la nature de ces problèmes et explique les modifications à apporter pour garantir que vos systèmes de stockage atteignent des performances optimales, une rentabilité maximale et la conformité aux bonnes pratiques.
+Le tableau de bord Well-Architected dans NetApp Console vérifie régulièrement les paramètres de votre système de stockage afin de détecter d'éventuels problèmes. S'il détecte des problèmes, il indique de quoi il s'agit et explique comment les résoudre afin que vos systèmes de stockage offrent de bonnes performances, maîtrisent les coûts et respectent les bonnes pratiques, aussi bien en mode par défaut qu'en mode ONTAP pour les environnements Flex Unified Google Cloud NetApp Volumes.
 
 Principales fonctionnalités :
 
@@ -40,9 +40,9 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["D�
 [[best-practices-and-recommendations-for-storage-workloads]]
 == Meilleures pratiques et recommandations pour les charges de travail de stockage
 
-Workload Factory évalue les configurations de stockage par rapport aux bonnes pratiques de stockage et d'ONTAP, ainsi qu'au cadre Google Cloud Well-Architected Framework. L'évaluation recommande également des améliorations.
+Workload Factory évalue les configurations de stockage par rapport aux bonnes pratiques de stockage et d’ONTAP, ainsi qu’au cadre Google Cloud Well-Architected. L’évaluation recommande également des améliorations pour les ressources Google Cloud NetApp Volumes en mode Default et les ressources Flex Unified découvertes via le point de terminaison proxy de l’API ONTAP.
 
-L'analyse bien structurée catégorise les configurations selon les piliers suivants du cadre : _fiabilité_ et _excellence opérationnelle_.
+L'analyse bien architecturée catégorise les configurations selon les piliers suivants du cadre : _fiabilité_ et _excellence opérationnelle_. Les résultats de l'évaluation peuvent inclure une valeur de mode de _Default-mode_ ou _ONTAP-mode_.
 
 
 
