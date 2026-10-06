@@ -1,0 +1,12 @@
+= Modifier et gérer les règles personnalisées
+:allow-uri-read: 
+
+
+
+
+[[edit-and-manage-custom-rules]]
+=== Modifier et gérer les règles personnalisées
+
+Vous pouvez désormais modifier les règles personnalisées dans le catalogue des règles. Vous pouvez mettre à jour les noms et les paramètres des règles, consulter les modifications dans le chat, valider les modifications et supprimer les règles dont vous n’avez plus besoin.
+
+link:https://docs.netapp.com/us-en/console-well-architected/manage-custom-rules.html["Apprenez à gérer les règles personnalisées"]
